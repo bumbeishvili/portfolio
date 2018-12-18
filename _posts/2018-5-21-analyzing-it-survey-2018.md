@@ -83,7 +83,7 @@ document.querySelector('.full-page-blog-width').innerHTML =notebook.modules[0].v
 console.log('created')
 
 
-  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@1.2.0?module";
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/runtime@3/dist/runtime.js";
  
  
 
