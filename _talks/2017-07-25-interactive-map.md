@@ -4,7 +4,7 @@ layout: post
 title: D3 Overview
 date: 2017-07-25 00:00:00
 language: Georgian Language
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
+description:  .
 featured_image: '/images/talks/d3-talk.png'
 ---
 

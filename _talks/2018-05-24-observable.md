@@ -4,7 +4,7 @@ layout: post
 title: Data , D3 and Observable
 date: 2018-05-24 00:00:00
 language: Georgian Language
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
+description:  .
 featured_image: '/images/talks/observable.jpg'
 ---
 

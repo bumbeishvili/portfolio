@@ -4,7 +4,7 @@ title: Upwork — Advices (part 1)
 language:   Georgian Language
 subtitle: 'd3.js'
 date: 2018-03-1 00:00:00
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
+description:  .
 featured_image: '/images/blogs/upwork/logo.png'
 ---
 

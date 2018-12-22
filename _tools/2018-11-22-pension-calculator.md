@@ -5,7 +5,7 @@ title: Pension calculator
 language:   Georgian Language
 subtitle: 'd3.js'
 date: 2018-11-21 00:00:00
-description: This page is a demo that shows everything you can do inside portfolio and blog posts.
+description:  .
 featured_image: '/images/tools/pension.png'
 ---
 <style>
