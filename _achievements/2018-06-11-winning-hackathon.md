@@ -35,10 +35,7 @@ Hackathon [VizHack](https://vizhack.ge/en/) was organized by [ForSet](https://fo
 &nbsp;&nbsp;Now Georgians are only one mouse click away to find their lost ancestors with all other information about them.
 
 
-It includes:
-* WebGL and d3.js animation from place of recruitment to place of death. Each point represents one person. So we have up to 300'000 points! Pretty fast using WebGL!
-* possibility to search people and find ancestors.
-* get statistical information for each region and city.
+You can see more details about the project [in this post](https://davidb.tech/project/geohistory)
 
 
 
