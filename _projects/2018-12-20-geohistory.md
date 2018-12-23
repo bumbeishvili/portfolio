@@ -17,7 +17,7 @@ featured_image: '/images/projects/geohistory/thumbnail.png'
 
 We won hackathon with this project.
 
-Users can Search for their descendants , see their paths and get familiar with original source    
+Users can Search for their ancestors , see their paths and get familiar with original source data   
 
 
 ![](/images/projects/geohistory/search.gif)
@@ -32,7 +32,7 @@ They also can see the total picture of second world war, from Georgians perspect
 
 
 
-From technical perspective, we used :
+From technical point of view, we used :
 <table>
 <tr><th>Front End Hosting</th><td>Github Pages </td></tr>
 <tr><th>Back End Hosting</th><td>Heroku </td></tr>
@@ -45,11 +45,11 @@ From technical perspective, we used :
 
 
 
-Website already was mentioned  by several major  news agencies  inside their articles and also some of the most popular televisions inside the country ...
+Website already was mentioned  by several major  news agencies  inside their articles and also some of the most popular televisions in the country ...
 
 
 
-Though, most heartwarming things are the letters and words , I am getting from people, who found their ancestors via this platform . 
+Though, most heartwarming things are the letters and words , I am getting from people, who found their ancestors using this platform . 
 
 
 
