@@ -643,9 +643,13 @@ applause-button{
   margin-top:50px !important
 }
 
-applause-button .count{
+applause-button .count-container{
   top: -20px !important;
   font-size: 15px;
+}
+
+applause-button .count{
+  width:70px!important;
 }
 
 applause-button.outer .style-root{
@@ -659,7 +663,7 @@ applause-button.outer svg{
   width:30%;
  }
 
- applause-button.outer .count{
+ applause-button.outer .count-container{
   top: 11px !important;
   left: 8px;
   font-size: 9px;
@@ -671,3 +675,7 @@ applause-button.outer{
   opacity:1;
   width:37px !important;
 }
+
+
+overflow-y: scroll;
+overflow-x: hidden;
