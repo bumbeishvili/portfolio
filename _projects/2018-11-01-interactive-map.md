@@ -9,7 +9,7 @@ description:  .
 featured_image: '/images/nestseekers/outer_thumbnail.png'
 ---
 
-<iframe src="https://occam-labs.github.io/Nestseekers/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="20px" marginwidth="20px" height="700px" width="100%" allowfullscreen></iframe>
+
 
 
 
