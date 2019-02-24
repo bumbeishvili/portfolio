@@ -2,10 +2,10 @@
 top: interactive
 layout: post
 comments: true
-title: 'Georgians deaths in WW2 - geohistory.ge'
+title: 'geohistory.ge'
 subtitle: 'd3.js, materializecss, node.js, mongodb, heroku'
 date: 2018-12-20 00:00:00
-description:  Deaths of gerorgian warriors, during world war 2
+description:  Deaths of georgian warriors, during world war 2
 featured_image: '/images/projects/geohistory/thumbnail.png'
 ---
 

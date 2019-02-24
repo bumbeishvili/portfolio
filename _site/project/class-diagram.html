@@ -23,19 +23,19 @@
 	<!-- Page Info -->
 
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>D3 Overview – David B.</title>
-	<meta name="description" content=".">
+	<title>Datastax - class diagram – David B.</title>
+	<meta name="description" content="Class diagram">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="D3 Overview – David B. ">
-	<meta name="twitter:description" content=".">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/talks/d3-talk.png">
+	<meta name="twitter:title" content="Datastax - class diagram – David B. ">
+	<meta name="twitter:description" content="Class diagram">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/projects/datastax/thumbnail.png">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="D3 Overview – David B. " />
-	<meta property="og:description" content="." />
-	<meta property="og:image" content="http://localhost:4000/images/talks/d3-talk.png" />
+	<meta property="og:title" content="Datastax - class diagram – David B. " />
+	<meta property="og:description" content="Class diagram" />
+	<meta property="og:image" content="http://localhost:4000/images/projects/datastax/thumbnail.png" />
 
 	
 	<!-- Font Embed Code -->
@@ -85,7 +85,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/talks/interactive-map">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/project/class-diagram">
 	<script>
 		(function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
@@ -311,7 +311,7 @@
 
 
 
-		<div class="page__content" data-page-title="D3 Overview – David B. ">
+		<div class="page__content" data-page-title="Datastax - class diagram – David B. ">
 
 			<section class="intro">
 		
@@ -322,10 +322,10 @@
 			 Fullscreen</button>
 
 
-			 <applause-button  url="https://bumbeishvili.github.io/talks/interactive-map"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+			 <applause-button  url="https://bumbeishvili.github.io/project/class-diagram"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
 
-		<h1>D3 Overview</h1>
-		<p>25 July 2017</p>
+		<h1>Datastax - class diagram</h1>
+		<p>24 February 2019</p>
 
 	</div>
 
@@ -335,26 +335,36 @@
 
 	<div class="wrap">
 
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/HhRNTvTwcR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+		<p><img src="/images/projects/datastax/disney.png" alt="" /></p>
 
-<p>It was my first talk about d3.js</p>
+<p>Diagram had several requirements:</p>
+<ol>
+  <li>Should be looking as clean as possible</li>
+  <li>Should be zoomable and pannable</li>
+  <li>Collapsible and Draggable nodes</li>
+  <li>Should be able to work with graphql source file</li>
+  <li>After each interaction, layout should be saved in browser</li>
+</ol>
 
-<p>Here are relevant links</p>
+<p>I used</p>
 
-<p><a href="https://www.meetup.com/Data-Science-Tbilisi/events/241545259/?fbclid=IwAR1p8SPfSqr8DH4MfQu8CbFASsFyTMZcPvk6LddqWfr75m-x5IAJ19HGT0Y">Details - Meetup.com</a></p>
+<p><strong>d3.js</strong>  - for drawing</p>
 
-<p><a href="https://bumbeishvili.github.io/d3-presentation/examples/classic-slides/#/welcome">Slides</a></p>
+<p><strong>d3-dag</strong>  -  to calculate optimal positioning of nodes. Most helpful was topological layout</p>
 
-<p><a href="https://codepen.io/bumbeishvili/pen/owOBoe">Codepen example</a></p>
+<p><strong>Crow’s foot notations</strong> -  to display relationship multiplicity</p>
 
-<p>If you are interested, you can join facebook groups</p>
+<p><strong>Graphql tag</strong> - to parse graphql files</p>
 
-<p><a href="https://www.facebook.com/groups/DataScienceTbilisi/"> Data science tbilisi </a></p>
+<p><img src="/images/projects/datastax/gif.gif" alt="" /></p>
 
-<p><a href="https://www.facebook.com/groups/d3.js.georgia/"> D3.js Georgia (Advanced Data Visualizations)</a></p>
+<p>End product is very smooth and pretty performant, compared to built in tools in several applications  (Eyes towards you, visual studio and your entity relationship diagram)</p>
+
+<p><br /><br /><br /></p>
+
 
 		
-		<button class='button show-comments' onclick="showComment('/talks/interactive-map')">
+		<button class='button show-comments' onclick="showComment('/project/class-diagram')">
 			Comments
 		</button>
 		<div id="disqus_thread"></div>
