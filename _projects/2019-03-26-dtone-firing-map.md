@@ -30,10 +30,11 @@ I used **d3.js and SVG**  - for drawing
 
 Most challenging part was performance
 
-Because of huge count of records, I had to process up to million records in every 4-5 sec. 
+Because of huge count of records, I had to process up to **million records** in every 4-5 second  on **client side**.
+
 That caused notable delays in lines and points transition . To overcome this, we have sorted data by date and maintained indexes of last used records, that reduced average records count to process, from **500,000**  to **100** 
 
-That said, instead of pushing svg to it's performance limits, in long term I am thinking to do this kind of interactive things in canvas, it'll be interesting to see how will svg compare in terms of performance, with canvas
+That said, instead of pushing svg to it's performance limits, in long term, I am thinking to do this kind of interactive things in canvas, it'll be interesting to see how will svg compare, in terms of performance, with canvas in this kind of situations
 
 
 

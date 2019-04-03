@@ -355,10 +355,11 @@ lines and circles respectively.</p>
 
 <p>Most challenging part was performance</p>
 
-<p>Because of huge count of records, I had to process up to million records in every 4-5 sec. 
-That caused notable delays in lines and points transition . To overcome this, we have sorted data by date and maintained indexes of last used records, that reduced average records count to process, from <strong>500,000</strong>  to <strong>100</strong></p>
+<p>Because of huge count of records, I had to process up to <strong>million records</strong> in every 4-5 second  on <strong>client side</strong>.</p>
 
-<p>That said, instead of pushing svg to it’s performance limits, in long term I am thinking to do this kind of interactive things in canvas, it’ll be interesting to see how will svg compare in terms of performance, with canvas</p>
+<p>That caused notable delays in lines and points transition . To overcome this, we have sorted data by date and maintained indexes of last used records, that reduced average records count to process, from <strong>500,000</strong>  to <strong>100</strong></p>
+
+<p>That said, instead of pushing svg to it’s performance limits, in long term, I am thinking to do this kind of interactive things in canvas, it’ll be interesting to see how will svg compare, in terms of performance, with canvas in this kind of situations</p>
 
 <p><br /><br /><br /></p>
 
