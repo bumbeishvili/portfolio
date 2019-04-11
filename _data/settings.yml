@@ -19,7 +19,7 @@ menu_settings:
       url: '/talk/'
     - title: 'Achievements'
       url: '/achievement/'
-    - title: 'About'
+    - title: 'Resume'
       url: '/about'
     - title: 'Contact'
       url: '/contact'
