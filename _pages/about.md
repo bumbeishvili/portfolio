@@ -11,7 +11,7 @@ featured_image:
     
 </div>
 
-[Download](https://github.com/bumbeishvili/portfolio/files/3067789/CV_David_Bumbeishvili.2.pdf)
+[Download](https://github.com/bumbeishvili/portfolio/files/3068736/CV_David_Bumbeishvili.2.pdf)
 <br>
 <br>
 <br>
