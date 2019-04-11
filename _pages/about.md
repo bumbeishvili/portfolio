@@ -11,13 +11,13 @@ featured_image:
     
 </div>
 
-[Download](https://github.com/bumbeishvili/portfolio/files/3068736/CV_David_Bumbeishvili.2.pdf)
+[Download](https://github.com/bumbeishvili/portfolio/files/3069538/CV_David_Bumbeishvili.9.pdf)
 <br>
 <br>
 <br>
 <br>
 
-<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/bumbeishvili/portfolio/files/3068736/CV_David_Bumbeishvili.2.pdf" width="100%" style="height:1200px" >
+<embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://github.com/bumbeishvili/portfolio/files/3069538/CV_David_Bumbeishvili.9.pdf" width="100%" style="height:1200px" >
 
 <style>
   .wrap{
