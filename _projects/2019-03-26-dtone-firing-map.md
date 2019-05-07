@@ -1,11 +1,11 @@
-<!-- ---
+---
 top: 
 layout: post
 comments: true
 title: 'Dtone - Firing Map'
 subtitle: 'd3.js'
 date: 2019-03-26 00:00:00
-description:  Class diagram 
+description:  Firing Map 
 featured_image: '/images/projects/dtone/thumbnail.png'
 ---
 
@@ -43,4 +43,4 @@ That said, instead of pushing svg to it's performance limits, in long term, I am
 
 
 <br/><br/><br/>
- -->
+
