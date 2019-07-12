@@ -1,4 +1,5 @@
 ---
+layout: post
 comments: true
 title: 'Teamapps - Org chart'
 subtitle: 'd3.js'
@@ -8,7 +9,7 @@ featured_image: '/images/projects/teamapps/thumbnail.png'
 ---
 
 
-
+![](/images/projects/teamapps/preview.gif)
 
 
 I created tree chart for teamapps
@@ -29,7 +30,7 @@ See
 [d3-organization-chart repository](https://github.com/bumbeishvili/d3-organization-chart)
 
 
-![](/images/projects/teamapps/preview.gif)
+
 
 ---
 
