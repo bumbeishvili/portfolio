@@ -9,9 +9,9 @@ description:  Class diagram
 featured_image: '/images/projects/datastax/thumbnail.png'
 ---
 
-<iframe src="https://bumbeishvili.github.io/d3-matthias-upw/classdiagram/?file=c360-template" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width="100%" allowfullscreen></iframe>
+<!-- <iframe src="https://bumbeishvili.github.io/d3-matthias-upw/classdiagram/?file=c360-template" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="600px" width="100%" allowfullscreen></iframe> -->
 
-
+![](/images/projects/datastax/gif.gif)
 
 Diagram had several requirements:
 1. Should be looking as clean as possible 
@@ -37,7 +37,7 @@ I used
 
 
 
-![](/images/projects/datastax/gif.gif)
+
 
 
 End product is very smooth and pretty performant, compared to built in tools in several applications 
