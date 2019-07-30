@@ -40,7 +40,7 @@ I used
 ![](/images/projects/datastax/gif.gif)
 
 
-End product is very smooth and pretty performant, compared to built in tools in several applications  (Eyes towards you, visual studio and your entity relationship diagram)
+End product is very smooth and pretty performant, compared to built in tools in several applications 
 
 
 <br/><br/><br/>
