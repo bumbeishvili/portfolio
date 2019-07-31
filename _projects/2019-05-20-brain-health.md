@@ -19,6 +19,7 @@ Web based data explorer using BrainBrowser library
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/brain-health/1.gif">
   <img src="/images/projects/brain-health/2.gif">
+  <img src="/images/projects/brain-health/3.gif">
 </div>
 
 ---
