@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: 'Brain-health -  brain viewer'
-subtitle: 'd3.js'
+subtitle: 'd3.js, brainBrowser'
 date: 2019-03-20 00:00:00
 description: 
 featured_image: '/images/projects/brain-health/thumbnail.png'
