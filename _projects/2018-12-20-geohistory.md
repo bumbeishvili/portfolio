@@ -6,7 +6,7 @@ title: 'geohistory.ge'
 subtitle: 'd3.js, materializecss, node.js, mongodb, heroku'
 date: 2018-12-20 00:00:00
 description:  Deaths of georgian warriors, during world war 2
-featured_image: '/images/projects/geohistory/thumbnail.png'
+featured_image: '/images/projects/geohistory/thumbnail.webp'
 ---
 
 <iframe src="https://geohistory.ge/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="700pxpx" width="100%px" allowfullscreen></iframe>

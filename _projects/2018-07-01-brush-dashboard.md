@@ -4,7 +4,7 @@ title: 'Trinsic - Dashboard, tree chart'
 subtitle: 'd3.js'
 date: 2018-07-01 00:00:00
 description: 
-featured_image: '/images/projects/trinsic/thumbnail.png'
+featured_image: '/images/projects/trinsic/thumbnail.webp'
 ---
 
 
