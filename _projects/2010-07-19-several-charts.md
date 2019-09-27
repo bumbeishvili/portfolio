@@ -2,12 +2,11 @@
 comments: true
 title: 'Beyond the hedge - Visualizations'
 subtitle: 'd3.js'
-date: 2018-11-01 00:00:00
 description:  .
 featured_image: '/images/hedge/thumbnail.png'
 ---
 
-![](/images/hedge/thumbnail.png)
+![](/images/justice-snapshot/thumbnail.png)
 
 ## Details
 

@@ -4,7 +4,6 @@ layout: post
 comments: true
 title: 'Datastax - class diagram'
 subtitle: 'd3.js, react, graphql'
-date: 2019-02-24 00:00:00
 description:  Class diagram 
 featured_image: '/images/projects/datastax/thumbnail.png'
 ---

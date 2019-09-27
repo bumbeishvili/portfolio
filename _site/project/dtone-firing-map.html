@@ -23,19 +23,19 @@
 	<!-- Page Info -->
 
 	<link rel="shortcut icon" href="/images/favicon.png">
-	<title>Data , D3 and Observable – David B.</title>
-	<meta name="description" content=".">
+	<title>Dtone - Firing Map – David B.</title>
+	<meta name="description" content="Firing Map">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Data , D3 and Observable – David B. ">
-	<meta name="twitter:description" content=".">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/talks/observable.jpg">
+	<meta name="twitter:title" content="Dtone - Firing Map – David B. ">
+	<meta name="twitter:description" content="Firing Map">
+	<meta name="twitter:image:src" content="http://localhost:4000/images/projects/dtone/thumbnail.webp">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Data , D3 and Observable – David B. " />
-	<meta property="og:description" content="." />
-	<meta property="og:image" content="http://localhost:4000/images/talks/observable.jpg" />
+	<meta property="og:title" content="Dtone - Firing Map – David B. " />
+	<meta property="og:description" content="Firing Map" />
+	<meta property="og:image" content="http://localhost:4000/images/projects/dtone/thumbnail.webp" />
 
 	
 	<!-- Font Embed Code -->
@@ -85,7 +85,7 @@
 </head>
 
 
-<body class="loading" data-site-url="http://localhost:4000" data-page-url="/talks/observable">
+<body class="loading" data-site-url="http://localhost:4000" data-page-url="/project/dtone-firing-map">
 	<script>
 		(function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
@@ -331,14 +331,14 @@
 
 
 
-		<div class="page__content" data-page-title="Data , D3 and Observable – David B. ">
+		<div class="page__content" data-page-title="Dtone - Firing Map – David B. ">
 
 			 <section class="intro">
 		
 	<div class="wrap test-class">
 	
-		<h1>Data , D3 and Observable</h1>
-		<p>24 May 2018</p>
+		<h1>Dtone - Firing Map</h1>
+		<p>20 July 2010</p>
 
 	
 		
@@ -347,7 +347,7 @@
 			 Fullscreen</button>
 
 
-			 <applause-button  url="https://bumbeishvili.github.io/talks/observable"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
+			 <applause-button  url="https://bumbeishvili.github.io/project/dtone-firing-map"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/>
 			 
 			 
 	
@@ -359,30 +359,33 @@
 
 	<div class="wrap">
 
-		<p><img src="/images/talks/observable.jpg" alt="" /></p>
+		<p><img src="/images/projects/dtone/preview.gif" alt="" /></p>
 
-<p>Sadly, video is not available</p>
+<p>This map displays  several types of live transactions</p>
 
-<p>We analyzed  1918 year’s, Georgian parliament members  data using <a href="https://beta.observablehq.com/">ObservableHQ Platform</a> and <code class="highlighter-rouge">D3.js</code> library</p>
+<p>We have domestic and cross country transactions, which are displayed as
+lines and circles respectively.</p>
 
-<p>We heavily used <code class="highlighter-rouge">d3.nest</code> in the process (Which kinda like is <code class="highlighter-rouge">group by</code> equivalent)</p>
+<p>Transactions themselves can be money transfer, digital value and airtime credit, those can be differentiated with colors.</p>
 
-<p>Here is the notebook, we were working on</p>
+<p>These transactions, also can be processed using mobile, bank account or cash pickup, we can see corresponding icons displaying this data on the map as well</p>
 
-<p><a href="https://beta.observablehq.com/@bumbeishvili/d3-meetup-georgia?fbclid=IwAR37kwzID5RawHoHbAuTBu0UMeT-Oo3_NAHRszAjdhQWyZLwW3jFJYgOfBs">Observable notebook</a></p>
+<hr />
+<p>I used <strong>d3.js and SVG</strong>  - for drawing</p>
 
-<p><br />
-<br />
-<br />
-<b> P.S. </b>
-  If you are interested, you can join relevant facebook groups</p>
+<p>Most challenging part was performance</p>
 
-<p><a href="https://www.facebook.com/groups/DataScienceTbilisi/"> Data science tbilisi </a></p>
+<p>Because of huge count of records, I had to process up to <strong>million records</strong> in every 4-5 second  on <strong>client side</strong>.</p>
 
-<p><a href="https://www.facebook.com/groups/d3.js.georgia/"> D3.js Georgia (Advanced Data Visualizations)</a></p>
+<p>That caused notable delays in lines and points transition . To overcome this, we have sorted data by date and maintained indexes of last used records, that reduced average records count to process, from <strong>500,000</strong>  to <strong>100</strong></p>
+
+<p>That said, instead of pushing svg to it’s performance limits, in long term, I am thinking to do this kind of interactive things in canvas, it’ll be interesting to see how will svg compare, in terms of performance, with canvas in this kind of situations</p>
+
+<p><br /><br /><br /></p>
+
 
 		
-		<button class='button show-comments' onclick="showComment('/talks/observable')">
+		<button class='button show-comments' onclick="showComment('/project/dtone-firing-map')">
 			Comments
 		</button>
 		<div id="disqus_thread"></div>

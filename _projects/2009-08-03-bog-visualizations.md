@@ -2,7 +2,6 @@
 comments: true
 title: 'Bog - Visualizations'
 subtitle: 'd3.js'
-date: 2018-08-03 00:00:00
 description:  .
 featured_image: '/images/projects/bog/5.png'
 ---

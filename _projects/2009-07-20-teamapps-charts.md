@@ -3,7 +3,6 @@ layout: post
 comments: true
 title: 'Teamapps - Org chart'
 subtitle: 'd3.js'
-date: 2019-05-20 00:00:00
 description: 
 featured_image: '/images/projects/teamapps/thumbnail.png'
 ---

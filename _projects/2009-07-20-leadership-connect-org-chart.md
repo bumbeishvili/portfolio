@@ -3,7 +3,6 @@ layout: post
 comments: true
 title: 'Leadership connect - OrgChart'
 subtitle: 'd3.js'
-date: 2019-07-20 00:00:00
 description: 
 featured_image: '/images/projects/leadership-connect/thumbnail.webp'
 ---
