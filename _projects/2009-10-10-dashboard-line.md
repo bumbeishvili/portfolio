@@ -3,7 +3,7 @@ comments: true
 title: 'DSIO - Dashboard, tree chart'
 subtitle: 'd3.js, bootstrap'
 description: 
-featured_image: '/images/colin/dashboard.webp'
+featured_image: '/images/colin/thumbnail.png'
 ---
 
 ![](/images/colin/dashboard.png)
