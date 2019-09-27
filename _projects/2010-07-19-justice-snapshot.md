@@ -2,44 +2,53 @@
 top: 
 layout: post
 comments: true
-title: 'Dtone - Firing Map'
+title: 'Justice Snapshot - Somalia'
 subtitle: 'd3.js'
 description:  Firing Map 
 featured_image: '/images/projects/justice-snapshot/thumbnail.png'
 ---
 
-
-
-![](/images/projects/dtone/preview.gif)
-
-This map displays  several types of live transactions
-
-We have domestic and cross country transactions, which are displayed as
-lines and circles respectively.
-
-Transactions themselves can be money transfer, digital value and airtime credit, those can be differentiated with colors.
-
-These transactions, also can be processed using mobile, bank account or cash pickup, we can see corresponding icons displaying this data on the map as well
-
----
-I used **d3.js and SVG**  - for drawing
+![](/images/projects/justice-snapshot/displacement.gif) 
 
 
 
 
-Most challenging part was performance
+## Popups
+![](/images/projects/justice-snapshot/governance.gif)
 
-Because of huge count of records, I had to process up to **million records** in every 4-5 second  on **client side**.
+![](/images/projects/justice-snapshot/initial.gif)
 
-That caused notable delays in lines and points transition . To overcome this, we have sorted data by date and maintained indexes of last used records, that reduced average records count to process, from **500,000**  to **100** 
+![](/images/projects/justice-snapshot/attorney.gif)  
 
-That said, instead of pushing svg to it's performance limits, in long term, I am thinking to do this kind of interactive things in canvas, it'll be interesting to see how will svg compare, in terms of performance, with canvas in this kind of situations
+![](/images/projects/justice-snapshot/district.gif)  
+
+![](/images/projects/justice-snapshot/legal.gif)  
+
+![](/images/projects/justice-snapshot/prison.gif)  
+
+![](/images/projects/justice-snapshot/supreme.gif)  
 
 
 
+## Maps
+##### Displacement
+![](/images/projects/justice-snapshot/displacement.gif) 
+
+##### Data Collection Sites
+![](/images/projects/justice-snapshot/partner.gif) 
+
+##### Security & Violences
+![](/images/projects/justice-snapshot/security.gif) 
+
+##### Territory Controls
+![](/images/projects/justice-snapshot/control.gif) 
 
 
+## Key Measures
+##### Case Management
+![](/images/projects/justice-snapshot/case.gif) 
 
-
+##### Train & Equip
+![](/images/projects/justice-snapshot/train.gif) 
 <br/><br/><br/>
 
