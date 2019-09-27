@@ -4,7 +4,6 @@ layout: post
 comments: true
 title: 'Dtone - Firing Map'
 subtitle: 'd3.js'
-date: 2019-06-26 00:00:00
 description:  Firing Map 
 featured_image: '/images/projects/dtone/thumbnail.webp'
 ---

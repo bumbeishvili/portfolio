@@ -4,7 +4,6 @@ layout: post
 comments: true
 title: 'geohistory.ge'
 subtitle: 'd3.js, materializecss, node.js, mongodb, heroku'
-date: 2018-12-20 00:00:00
 description:  Deaths of georgian warriors, during world war 2
 featured_image: '/images/projects/geohistory/thumbnail.webp'
 ---

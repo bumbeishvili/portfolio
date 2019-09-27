@@ -4,10 +4,10 @@ title: 'Beyond the hedge - Visualizations'
 subtitle: 'd3.js'
 date: 2018-11-01 00:00:00
 description:  .
-featured_image: '/images/hedge/5.png'
+featured_image: '/images/hedge/thumbnail.png'
 ---
 
-![](/images/hedge/4.png)
+![](/images/hedge/thumbnail.png)
 
 ## Details
 
