@@ -5,5 +5,6 @@ description:
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-{% include contact-form.html %}
+Just email me at  <a href="mailto:sme@davidb.dev">me@davidb.dev</a>
+
 
