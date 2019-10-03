@@ -5,6 +5,4 @@ description:
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-Just email me at  <a href="mailto:sme@davidb.dev">me@davidb.dev</a>
-
-
+Just email me at <span style="color:blue;font-weight:bold">me@davidb.dev</span>
