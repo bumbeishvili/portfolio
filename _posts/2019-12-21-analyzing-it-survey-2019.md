@@ -1,12 +1,12 @@
 ---
 comments: true
-issurvey2018: true
-title: Georgian IT Survey 2018
+issurvey2019: true
+title: Georgian IT Survey 2019
 language:   Georgian Language
 subtitle: 'd3.js'
-date: 2018-05-21 00:00:00
+date: 2019-12-21 00:00:00
 description:  .
-featured_image: '/images/blogs/observable/it-survey-2018.png'
+featured_image: '/images/blogs/observable/avg-salary-2019.png'
 ---
 <style>
 .observable-wrapper svg{
@@ -69,7 +69,7 @@ ul, ol {
 <div style='display:none' data-type='module' class='script-this'>
     
  console.log('start')
-  import notebook from "https://api.observablehq.com/@bumbeishvili/how-much-georgian-devs-earn.js";
+  import notebook from "https://api.observablehq.com/@bumbeishvili/georgian-it-survey-2019.js";
 
 console.log('imported')
 
