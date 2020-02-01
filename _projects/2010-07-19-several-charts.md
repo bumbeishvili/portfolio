@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 title: 'Beyond the hedge - Visualizations'
 subtitle: 'd3.js'
@@ -48,4 +48,4 @@ Project is live at  `New South Wales Government's department of primary industri
 </div>
 
 
-
+ -->

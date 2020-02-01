@@ -1,4 +1,4 @@
----
+<!-- ---
 comments: true
 title: 'Trinsic - Dashboard, tree chart'
 subtitle: 'd3.js'
@@ -23,4 +23,4 @@ I created  dashboard and several interactive charts for  trinsic agency
 
 
 
-
+ -->
