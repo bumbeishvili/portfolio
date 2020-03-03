@@ -1,19 +1,16 @@
 ---
 comments: true
 title: "Learn-Earn"
-subtitle: "d3.js, bootstrap"
+subtitle: "d3.js, vue"
 description:
 featured_image: "/images/projects/learn-earn/5.png"
 ---
 
 ![](/images/projects/learn-earn/gif.gif)
 
-## Details
-
-Created dashboard and several charts for [DSIO]() agency
 
 
-
+Zoomable and draggable grouped bar chart
 
 
 
