@@ -12,34 +12,20 @@ featured_image: '/images/projects/datastax/thumbnail.png'
 
 ![](/images/projects/datastax/gif.gif)
 
-Diagram had several requirements:
-1. Should be looking as clean as possible 
-1. Should be zoomable and pannable
-1. Collapsible and Draggable nodes
-1. Should be able to work with graphql source file
-1. After each interaction, layout should be saved in browser
-
-
-I used
-
-**d3.js**  - for drawing
-
-**d3-dag**  -  to calculate optimal positioning of nodes. Most helpful was topological layout
-
-**Crow's foot notations** -  to display relationship multiplicity
-
-**Graphql tag** - to parse graphql files
 
 
 
 
 
+End product is very smooth and pretty performing, compared to built in tools in several applications 
 
 
-
-
-
-End product is very smooth and pretty performant, compared to built in tools in several applications 
+<div class="gallery" data-columns="3">
+	<img src="/images/projects/datastax/1.png">
+  <img src="/images/projects/datastax/2.png">  
+  <img src="/images/projects/datastax/3.png">  
+  <img src="/images/projects/datastax/4.png">  
+</div>
 
 
 <br/><br/><br/>
