@@ -12,15 +12,8 @@ featured_image: "/images/projects/coronavirus/thumbnail.png"
 
 ![](/images/projects/coronavirus/corona.gif)
 
-Corona virus spread with daily data update
+Corona virus spread with live data update
 
 
-
-<div class="gallery" data-columns="3">
-	<img src="/images/projects/coronavirus/1.png">
-  <img src="/images/projects/coronavirus/2.png">  
-  <img src="/images/projects/coronavirus/3.png">  
-  <img src="/images/projects/coronavirus/4.png">  
-</div>
 
 <br/><br/><br/>
