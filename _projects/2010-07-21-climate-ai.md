@@ -12,12 +12,18 @@ Water vapour and wind Directions
 
 ![](/images/projects/climateai/wind.gif)
 
-In Progress...
 
+Video bellow is just a little experiment  
+<br/>
+<video width="100%" controls autoplay>
+  <source src="/images/projects/climateai/wind.mp4" type="video/mp4">
+</video>
 
+Gallery
 
-<!-- <div class="gallery" data-columns="3">
-	<img src="/images/projects/andrew-globe/1.png">
-	<img src="/images/projects/andrew-globe/2.png">
-  <img src="/images/projects/andrew-globe/3.png">
-</div> -->
+<div class="gallery" data-columns="3">
+	<img src="/images/projects/climateai/1.png">
+	<img src="/images/projects/climateai/2.png">
+  <img src="/images/projects/climateai/3.png">
+	<img src="/images/projects/climateai/4.png">
+</div>
