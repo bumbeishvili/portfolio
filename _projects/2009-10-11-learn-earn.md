@@ -3,7 +3,7 @@ comments: true
 title: "Learn-Earn"
 subtitle: "d3.js, vue"
 description:
-featured_image: "/images/projects/learn-earn/5.png"
+featured_image: "/images/projects/learn-earn/thumbnail.webp"
 ---
 
 ![](/images/projects/learn-earn/gif.gif)

@@ -3,7 +3,7 @@ comments: true
 title: 'Bog - Visualizations'
 subtitle: 'd3.js'
 description:  .
-featured_image: '/images/projects/bog/5.png'
+featured_image: '/images/projects/bog/thumbnail.webp'
 ---
 
 <iframe src="https://bumbeishvili.github.io/chatbot-tree/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="550px" width="100%px" allowfullscreen></iframe>

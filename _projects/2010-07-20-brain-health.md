@@ -4,7 +4,7 @@ comments: true
 title: 'Brain-health -  brain viewer'
 subtitle: 'd3.js, brainBrowser'
 description: 
-featured_image: '/images/projects/brain-health/thumbnail.png'
+featured_image: '/images/projects/brain-health/thumbnail.webp'
 ---
 
 

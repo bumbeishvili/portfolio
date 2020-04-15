@@ -3,7 +3,7 @@ comments: true
 title: "Marketers Center - Globe"
 subtitle: "d3.js, react"
 description: .
-featured_image: "/images/projects/andrew-globe/thumbnail.png"
+featured_image: "/images/projects/andrew-globe/thumbnail.webp"
 ---
 
 ![](/images/projects/andrew-globe/main.gif)

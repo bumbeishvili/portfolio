@@ -3,7 +3,7 @@ comments: true
 title: "Climate.ai - map"
 subtitle: "d3.js, react"
 description: .
-featured_image: "/images/projects/climateai/thumbnail.png"
+featured_image: "/images/projects/climateai/thumbnail.webp"
 ---
 ![](/images/projects/climateai/water.gif)
 

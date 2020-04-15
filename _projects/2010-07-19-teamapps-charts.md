@@ -4,7 +4,7 @@ comments: true
 title: 'Teamapps - Org chart'
 subtitle: 'd3.js'
 description: 
-featured_image: '/images/projects/teamapps/thumbnail.png'
+featured_image: '/images/projects/teamapps/thumbnail.webp'
 ---
 
 

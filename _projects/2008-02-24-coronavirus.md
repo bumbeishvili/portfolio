@@ -5,7 +5,7 @@ comments: true
 title: "Coronavirus Spread"
 subtitle: "d3.js"
 description: Daily spread
-featured_image: "/images/projects/coronavirus/thumbnail.png"
+featured_image: "/images/projects/coronavirus/thumbnail.webp"
 ---
 
 [coronavirus.davidb.dev](https://coronavirus.davidb.dev)
