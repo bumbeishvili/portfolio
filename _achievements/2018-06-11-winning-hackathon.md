@@ -15,7 +15,7 @@ Our Team , "<b>Libre </b>",  won data visualization hackathon  <b>"Back to the F
 
 
 
-Team Members :  [Giorgi G.](https://giorgi-ghviniashvili.github.io/),    [David B.](#),   [Beka B.](https://github.com/beqa-bumbeishvili)
+Team Members :  [Giorgi G.](https://ghviniashvili.com/),    [David B.](#),   [Beka B.](https://github.com/beqa-bumbeishvili)
 
 
 Hackathon [VizHack](https://vizhack.ge/en/) was organized by [ForSet](https://forset.ge/).
