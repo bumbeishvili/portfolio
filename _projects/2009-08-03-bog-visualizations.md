@@ -1,4 +1,5 @@
 ---
+top: Interactive
 comments: true
 title: 'Bog - Visualizations'
 subtitle: 'd3.js'

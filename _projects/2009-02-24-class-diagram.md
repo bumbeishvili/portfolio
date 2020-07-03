@@ -1,5 +1,5 @@
 ---
-top: interactive
+top: 
 layout: post
 comments: true
 title: 'Datastax - class diagram'
