@@ -12,8 +12,8 @@ featured_image: '/images/ceros/thumbnail.webp'
 ## Details
 
 
-
-Created interactive names visualization for [CEROS](https://www.ceros.com/)
+ 
+Created interactive names visualization for [CEROS](https://www.ceros.com)
 
 
 It visualizes naming trends over time for both males and females
