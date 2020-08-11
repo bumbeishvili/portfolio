@@ -5,7 +5,7 @@ comments: true
 title: 'Dtone - Firing Map'
 subtitle: 'd3.js'
 description:  Firing Map 
-featured_image: '/images/projects/dtone/thumbnail.webp'
+featured_image: '/images/projects/dtone/thumbnail1.webp'
 ---
 
 
