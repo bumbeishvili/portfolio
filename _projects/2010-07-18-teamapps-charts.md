@@ -8,13 +8,15 @@ featured_image: '/images/projects/teamapps/thumbnail.webp'
 ---
 
 
-![](/images/projects/teamapps/preview.gif)
+![](/images/projects/teamapps/preview1.gif)
 
 
 I created tree chart for teamapps
 
 #### Tree Chart 
 Org chart built with d3 v5
+
+![](/images/projects/teamapps/preview.gif)
 
 ✓ Zoomable - programmable and manual zoom   
 ✓ Draggable - manual dragging   
