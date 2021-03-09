@@ -1,6 +1,6 @@
 ---
 comments: true
-title: "Secure Logic - Hierarchical graph"
+title: "Radial Tree"
 subtitle: "d3.js"
 description: 
 featured_image: "/images/projects/radial-tree/thumbnail.webp"
