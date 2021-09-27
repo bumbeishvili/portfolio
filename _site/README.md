@@ -1,1 +1,0 @@
-# bumbeishvili.github.io-dev
