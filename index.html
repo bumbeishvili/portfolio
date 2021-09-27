@@ -11,15 +11,15 @@ featured_image: /images/social.png
 
 		{% for project in site.projects reversed %}
 
-		<div class="portfolio-item">
+		<div class="portfolio-item" style="border-radius: 10px;padding:15px">
 
-			<a class="portfolio-item__link" href="{{ project.url }}">
+			<a class="portfolio-item__link"  style="border:none;padding:35px;border-radius:10px;background-color:#F7F3FA" href="{{ project.url }}">
 
-				<div class="portfolio-item__image">
-					<img src="{{ project.featured_image  }}" alt="{{ project.title }}">
+				<div  class="portfolio-item__image">
+					<img style="border-radius:15px;" src="{{ project.featured_image  }}" alt="{{ project.title }}">
 				</div>
 
-				<div class="portfolio-item__content">
+				<div class="portfolio-item__content"> 
 
 
 					<div class="portfolio-item__info">
