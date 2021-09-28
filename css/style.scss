@@ -683,6 +683,7 @@ applause-button.outer{
 
 
 @media only screen and (min-width: 1000px) {
+
   .gray-cards{
     .portfolio-item{
       border-radius: 10px !important;
@@ -709,5 +710,34 @@ applause-button.outer{
       right:5px
     }
   }
-}
 
+
+
+  .gray-cards{
+    .blog-post{
+      border-radius: 10px !important;
+      padding:17px !important
+    }
+
+    .blog-post__link{
+      border:none !important;
+      padding:35px !important;
+      border-radius:10px !important; 
+      background-color:#F7F3FA !important
+    }
+
+    .blog-post__image{
+      img{
+        border-radius:15px !important;
+      }
+    }
+
+    .portfolio-item__info>div{
+      color:white;
+      position:absolute; 
+      top:5px;
+      right:5px
+    }
+  }
+
+}
