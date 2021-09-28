@@ -13,11 +13,8 @@ Water vapour and wind Directions
 ![](/images/projects/climateai/wind.gif)
 
 
-Video bellow is just a little experiment  
-<br/>
-<video width="100%" controls autoplay>
-  <source src="/images/projects/climateai/wind.mp4" type="video/mp4">
-</video>
+
+
 
 Gallery
 
