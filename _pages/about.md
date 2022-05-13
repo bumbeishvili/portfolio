@@ -8,7 +8,7 @@ featured_image: /images/demo/demo-landscape.jpg
 If you want to discuss potential data visualization project, just email me details at <span style="color:blue;font-weight:bold">me@davidb.dev</span>
 
 <br/><br/>
-If you are an HR and want to take a look at my dry and colorless resume  [download it here](https://github.com/bumbeishvili/portfolio/files/4616407/Resume_David_Bum.pdf)
+If you are an HR and want to take a look at my no longer dry and colorless resume  [download it here](https://github.com/bumbeishvili/portfolio/files/8688205/resume_david_b.pdf)
 
 
 
