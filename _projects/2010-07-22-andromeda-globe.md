@@ -28,5 +28,4 @@ Imaginary world Andromeda  on the globe.
 	<img src="/images/projects/andromeda-globe/2.png">
 	<img src="/images/projects/andromeda-globe/3.png">
 	<img src="/images/projects/andromeda-globe/4.png">
-    
 </div>
