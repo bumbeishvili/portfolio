@@ -3,7 +3,7 @@ comments: true
 title: "class-diagram-builder"
 subtitle: "d3.js"
 description:
-featured_image: "/images/projects/class-diagram-builder/thumbnail.webp"
+featured_image: "/images/projects/class-diagram-builder/thumbnail.mp4"
 ---
 
 
