@@ -696,11 +696,12 @@ applause-button.outer{
       border-radius:10px !important; 
       background-color:#F7F3FA !important
     }
+    .portfolio-item__image{
+      border-radius:10px !important;
+      overflow:hidden !important; 
+    }
   
     .portfolio-item__image{
-       border-radius:10px;
-       overflow:hidden;
-
        img{
         border-radius:15px;
        }
