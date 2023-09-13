@@ -4,7 +4,7 @@ comments: true
 title: 'CEROS - Names visualization'
 subtitle: 'd3.js'
 description: 
-featured_image: '/images/ceros/thumbnail.webp'
+featured_image: '/images/ceros/thumbnail.mp4'
 ---
 
 <iframe src="https://bumbeishvili.github.io/d3-andrew-upwork-may/line/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="20px" marginwidth="20px" height="500px" width="100%" allowfullscreen></iframe>
