@@ -3,7 +3,7 @@ comments: true
 title: "Secure Logic - Hierarchical graph"
 subtitle: "d3.js"
 description: 
-featured_image: "/images/projects/securelogic/thumbnail.webp"
+featured_image: "/images/projects/securelogic/thumbnail.mp4"
 ---
 
 
