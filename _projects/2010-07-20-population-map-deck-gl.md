@@ -3,7 +3,7 @@ comments: true
 title: 'Realty properties  - deck.gl'
 subtitle: 'deck.gl, mapbox'
 description: 
-featured_image: '/images/projects/population-map/thumbnail.webp'
+featured_image: '/images/projects/population-map/thumbnail.mp4'
 ---
 
 
