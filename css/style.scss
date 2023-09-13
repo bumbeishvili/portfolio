@@ -698,6 +698,9 @@ applause-button.outer{
     }
   
     .portfolio-item__image{
+       border-radius:10px;
+       overflow:hidden;
+
        img{
         border-radius:15px;
        }

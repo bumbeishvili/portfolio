@@ -15,8 +15,12 @@ featured_image: /images/social.png
 
 			<a class="portfolio-item__link"  href="{{ project.url }}">
 
-				<div  class="portfolio-item__image">
-					<img src="{{ project.featured_image  }}" alt="{{ project.title }}">
+				<div  class="portfolio-item__image"  >
+					<video loop muted playsinline  autoplay  width="100%"  >
+						<source src="{{ project.featured_image  }}" type="video/mp4">
+					  </video>
+					
+					<!-- <img src="{{ project.featured_image  }}" alt="{{ project.title }}"> -->
 				</div>
 
 				<div class="portfolio-item__content"> 
