@@ -3,7 +3,7 @@ comments: true
 title: "Andromeda Globe"
 subtitle: "Three.js"
 description: 
-featured_image: "/images/projects/andromeda-globe/thumbnail.webp"
+featured_image: "/images/projects/andromeda-globe/andr_globe_thumbnail.mp4"
 ---
 
 
