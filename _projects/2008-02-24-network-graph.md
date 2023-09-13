@@ -5,7 +5,7 @@ comments: true
 title: "Network Graph"
 subtitle: "d3.js"
 description: 
-featured_image: "/images/projects/network-graph/thumbnail.webp"
+featured_image: "/images/projects/network-graph/thumbnail.mp4"
 ---
 
 ![](/images/projects/network-graph

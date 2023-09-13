@@ -5,7 +5,7 @@ comments: true
 title: 'Justice Snapshot - Somalia'
 subtitle: 'd3.js'
 description:  Firing Map 
-featured_image: '/images/projects/justice-snapshot/thumbnail.webp'
+featured_image: '/images/projects/justice-snapshot/thumbnail.mp4'
 ---
 
 ![](/images/projects/justice-snapshot/displacement.gif) 

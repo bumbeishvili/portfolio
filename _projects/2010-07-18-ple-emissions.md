@@ -3,7 +3,7 @@ comments: true
 title: " Premier League Emissions"
 subtitle: "d3.js, svelte"
 description:
-featured_image: "/images/projects/ple-emissions/thumbnail.png"
+featured_image: "/images/projects/ple-emissions/ple_thumbnail.mp4"
 ---
 
 <!-- Add video view -->

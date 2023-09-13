@@ -3,7 +3,7 @@ comments: true
 title: "Climate Globe"
 subtitle: "Three.js"
 description:
-featured_image: "/images/projects/clim-globe/thumbnail.webp"
+featured_image: "/images/projects/clim-globe/thumbnail.mp4"
 ---
 
  <img src="/images/projects/clim-globe/preview.gif">

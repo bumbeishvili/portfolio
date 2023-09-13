@@ -4,7 +4,7 @@ comments: true
 title: 'Leadership connect - OrgChart'
 subtitle: 'd3.js'
 description: 
-featured_image: '/images/projects/leadership-connect/preview.png'
+featured_image: '/images/projects/leadership-connect/thumbnail.mp4'
 ---
 
 
