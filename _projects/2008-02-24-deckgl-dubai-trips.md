@@ -5,7 +5,7 @@ comments: true
 title: "Dubai trips"
 subtitle: "deck.gl, d3.js"
 description: Daily spread
-featured_image: "/images/projects/dubai-trips/thumbnail.webp"
+featured_image: "/images/projects/dubai-trips/thumbnail.mp4"
 ---
 
 <video width="100%" controls autoplay>
