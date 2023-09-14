@@ -192,32 +192,39 @@
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
 			window.scrollTo({ top: 0, behavior: 'smooth' });
+			console.log('triggered', 500)
 		}, 500)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
 			window.scrollTo({ top: 0, behavior: 'smooth' });
+			console.log('triggered', 1000)
 
 		}, 1000)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
+			console.log('triggered', 2000)
 		}, 2000)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
+			console.log('triggered', 5000)
 		}, 5000)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
+			console.log('triggered', 10000)
 		}, 10000)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
+			console.log('triggered', 15000)
 		}, 15000)
 
 		setTimeout(d => {
 			window.dispatchEvent(new Event('resize'));
+			console.log('triggered', 20000)
 		}, 20000)
 
 		function toggleFullScreen() {
