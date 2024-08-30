@@ -2,7 +2,7 @@
 top: 
 layout: post
 comments: true
-title: "Shoe Configurator"
+title: "Particles cursor animation"
 subtitle: "Three.js, d3.js"
 description: Daily spread
 featured_image: "/images/projects/threejs-journey-particles-cursor-animation-39/thumbnail.mp4"
