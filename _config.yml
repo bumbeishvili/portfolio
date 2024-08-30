@@ -16,6 +16,9 @@ collections:
   achievements:
     output: true
     permalink: /achievements/:slug
+  gl:
+    output: true
+    permalink: /gl/:slug
 
  
 
@@ -37,6 +40,12 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: ""
+      type: "gl"
+    values:
+      layout: "gl"
   -
     scope:
       path: ""

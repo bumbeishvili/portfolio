@@ -3,11 +3,15 @@ layout: default
 ---
 
 <section class="intro">
+
 	<div class="wrap">
-		<!-- <applause-button url="https://bumbeishvili.github.io{{post.url}}"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999"/> -->
 
 		<h1>{{ page.title }}</h1>
-		<p>{{ page.date | date_to_long_string }}</p>
+		<p>{{ page.subtitle }}</p>
+		
+		<!-- <applause-button  url="https://bumbeishvili.github.io{{page.url}}"  style="width: 58px; height: 58px;position:fixed;bottom:40px;right:20px;z-index:999" />
+
+	 -->
 
 	</div>
 
@@ -16,7 +20,14 @@ layout: default
 <section class="single">
 
 	<div class="wrap">
+
+			<button class='button post-full-screen-button' style="position:fixed;top:0px;right:0;z-index:999999" 
+			onclick="toggleFullScreen()" >
+			 Fullscreen</button>
+
 		{{ page.content }}
+
+
 		{% if page.comments %}
 		<button class='button show-comments' onclick="showComment('{{page.url}}')">
 			Comments
