@@ -12,7 +12,7 @@ menu_settings:
     - title: '2D Projects'
       url: '/'
     - title: '3D Projects'
-      url: '/gl'
+      url: '/gl/'
     - title: 'Blog'
       url: '/blog/'
     - title: 'About'
