@@ -2,7 +2,7 @@
 top: 
 layout: post
 comments: true
-title: "Shoe Configurator"
+title: "Chair Configurator"
 subtitle: "Three.js, d3.js"
 description: Daily spread
 featured_image: "/images/projects/rtf-shoe-configurator/thumbnail.mp4"
