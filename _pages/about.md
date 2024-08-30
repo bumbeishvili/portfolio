@@ -5,62 +5,32 @@ description:
 featured_image: /images/demo/demo-landscape.jpg
 ---
 
-If you want to discuss potential data visualization project, just email me details at <span style="color:blue;font-weight:bold">me@davidb.dev</span>
+Hello, I'm David, a frontend data visualization-focused engineer with a decade of development experience.
 
-<br/><br/>
-If you are an HR and want to take a look at my no longer dry and colorless resume  [download it here](https://github.com/bumbeishvili/portfolio/files/8860374/resume_david_b.1.pdf)
+![photo](https://github.com/bumbeishvili/portfolio/assets/6873202/295c9d26-0545-487f-8df0-a349917e6a39)
 
+## Professional Journey
 
+I initially started working at Bank of Georgia as a full-stack developer, then transitioned to the data visualization field, and began working remotely on independent projects.
 
-<br><br><br>
-I am available for freelance data visualization work through various freelance websites
+I've released multiple open-source projects, with [Org-Chart](https://github.com/bumbeishvili/org-chart) being my most successful one, boasting 200k+ monthly downloads.
 
+In 2022, I joined [Infogr8](https://infogr8.com/) as a senior data visualization developer and have been working with them ever since.
 
-##### Upwork
-Upwork is my default choice, since it offers good & safe  services and has reasonable service fees.
+## Notable Collaborations
 
-If you don't have profile on Upwork, please contact me first about the project,  we can have 0% project fee by registering via referral link.
+Remote work has allowed me to connect with people worldwide, providing me with a diverse experience in understanding the specific needs of potential clients. I've collaborated with individuals, startups, and established companies across various industries.
 
-It's a top rated freelancer's perk
+Over the years, I've had the pleasure of working with renowned clients such as Harvard, CompTIA, Mastercard Foundation, Sequoia Capital, and many more.
 
-<a href="https://www.upwork.com/fl/davitbumbeishvili">
-  <img style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" src="/images/contact/upwork.png" />
-</a>
-<br><br>
+While it feels awkward to say, several of my projects have won awards. Notably, [The American Opportunity Index](https://davidb.dev/project/sff) became a [Webby Awards Winner](https://winners.webbyawards.com/2023/websites-and-mobile-sites/general-websites-and-mobile-sites/employment/249474/the-american-opportunity-index).
 
-##### PPH
-My Second choice is peoplePerHour. It also offers 0 % fee to invited clients. 
+## How I Can Help You
 
-If you plan to work with me via PeoplePerHour and don't have an account , please just click hire me button bellow and we can enjoy safe working relationship, with 0 % fee.
+I am always available to discuss potential data visualization projects with well-explained details and scope. Feel free to send details over my email -  <span style="color:blue;font-weight:bold">me@davidb.dev</span>
 
-<br>
+Truth be told, I receive multiple potential project requests weekly, often seeking a chat or scheduling a video call without explaining project details first. While I understand that many initial stage projects lack well-defined details, considering my current schedule, it's impossible for me to respond to similar requests. For scenarios like this, I usually offer a [paid consultation](https://www.fiverr.com/bumbeishvili/give-1h-d3-js-consultation).
 
-<a href="https://www.peopleperhour.com/hire/me/38121145/1342897?next=https%3A%2F%2Fwww.peopleperhour.com%2Ffreelancer%2Fdevelopment-it%2Fdavit-bumbeishvili-data-visualization-developer-d3-js-zxvymnj%3Fref%3Dhireme">
-  <img style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" src="/images/contact/pph.png" />
-</a>
-
-<br>
-
-
-##### Fiverr PRO
-Recently, I was approved in Fiverr PRO program and became active on this platform as well. Overall platform is very well designed, though 20% fee is very concerning . That's why this option is in the third place.
-
-Fiverr has recently introduced client invitation program, to work with new clients and pay 0% fee to Fiverr. Unfortunately this feature is limited and I don't have access to it. Once it will be available, I will probably  move this option higher
-
-<a href="https://www.fiverr.com/bumbeishvili">
-  <img style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" src="/images/contact/fiverr.png" />
-</a>
-<br><br>
-
-
-##### Guru
-I am also partially active on guru.com. Though I am not usually updating profile and it's my least preferable option for taking new projects. 
-
-Please keep in mind, that you should check Upwork profile for my up to date hourly rates
-
-<a href="https://www.guru.com/freelancers/davit-bumbeishvili">
-  <img style="box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)" src="/images/contact/guru.png" />
-</a>
-<br><br>
+If you are an HR, who might have a potential remote role involving data visualization and interested  in my resume -  <a href="https://github.com/bumbeishvili/portfolio/files/8860374/resume_david_b.1.pdf">download it here</a>
 
 
