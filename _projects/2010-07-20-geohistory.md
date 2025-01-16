@@ -8,9 +8,9 @@ description:  Deaths of georgian warriors, during world war 2
 featured_image: '/images/projects/geohistory/thumbnail.mp4'
 ---
 
-<iframe src="https://geohistory.ge/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="700pxpx" width="100%px" allowfullscreen></iframe>
+<!-- <iframe src="https://geohistory.ge/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="700pxpx" width="100%px" allowfullscreen></iframe>
 
-
+ -->
 
 ## Details
 

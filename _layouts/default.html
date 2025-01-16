@@ -299,7 +299,7 @@
 					const interval = setInterval(d => {
 						console.log('tried', trial++)
 						if (trial == 15) {
-							clearInterval(interval);
+							//clearInterval(interval);
 						}
 						if (document.querySelector('.script-this')) {
 							s = document.createElement('script');
@@ -312,7 +312,7 @@
 								s.text = code;
 								document.body.appendChild(s);
 							}
-							clearInterval(interval)
+							//clearInterval(interval)
 						}
 					}, 300)
 
