@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: "Harvard - Workforce Almanac"
 subtitle: "d3.js, frontend engineering"
-description:
+description: "Open-access map of 20,000+ U.S. workforce training providers."
 featured_image: "/images/projects/harvard-workforce/thumbnail.mp4"
 ---
 
@@ -13,7 +13,13 @@ featured_image: "/images/projects/harvard-workforce/thumbnail.mp4"
 </video>
 </div>
 
-Interactive workforce visualization project developed for Harvard.
+The Workforce Almanac maps 20,000+ U.S. training providers in one integrated, open-access platform.
+
+- Covers higher ed, apprenticeships, WIOA-eligible providers, and non-profits.
+- Built to support policy, research, and local workforce planning.
+
+<br/>
+Live website: [workforcealmanac.com](https://workforcealmanac.com/).
 
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/harvard-workforce/1.png">
