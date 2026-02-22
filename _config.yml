@@ -19,6 +19,9 @@ collections:
   gl:
     output: true
     permalink: /gl/:slug
+  notable-collaborations:
+    output: true
+    permalink: /notable-collaborations/:slug
 
  
 
@@ -46,6 +49,12 @@ defaults:
       type: "gl"
     values:
       layout: "gl"
+  -
+    scope:
+      path: ""
+      type: "notable-collaborations"
+    values:
+      layout: "post"
   -
     scope:
       path: ""

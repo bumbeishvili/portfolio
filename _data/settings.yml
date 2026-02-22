@@ -13,6 +13,8 @@ menu_settings:
       url: '/'
     - title: '3D Projects'
       url: '/gl/'
+    - title: 'Notable Collaborations'
+      url: '/notable-collaborations/'
     - title: 'Blog'
       url: '/blog/'
     - title: 'About'

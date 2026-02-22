@@ -1,0 +1,52 @@
+---
+layout: default
+title: Portfolio
+description:
+featured_image: /images/social.png
+---
+
+<section class="portfolio">
+
+	<div class="content-wrap portfolio-wrap gray-cards">
+
+		{% assign notable_collection = site.collections | where: "label", "notable-collaborations" | first %}
+		{% for project in notable_collection.docs reversed %}
+
+		<div class="portfolio-item " >
+
+			<a class="portfolio-item__link"  href="{{ project.url }}">
+
+				<div  class="portfolio-item__image"  >
+					<video loop muted playsinline  autoplay  width="100%"  >
+						<source src="{{ project.featured_image  }}" type="video/mp4">
+					  </video>
+					
+					<!-- <img src="{{ project.featured_image  }}" alt="{{ project.title }}"> -->
+				</div>
+
+				<div class="portfolio-item__content"> 
+
+
+					<div class="portfolio-item__info">
+				    	<div >{{project.top}}</div>
+						<h2 class="portfolio-item__title">{{ project.title }}</h2>
+						<p class="portfolio-item__subtitle">{{ project.subtitle }}</p>
+					</div>
+				</div>
+
+
+
+				<!-- <applause-button class="outer" style="position:absolute;width: 28px; height: 28px;z-index:999;bottom:5px;left:5px;"
+				 url="https://bumbeishvili.github.io{{project.url}}" /> -->
+
+
+
+			</a>
+
+		</div>
+
+		{% endfor %}
+
+	</div>
+
+</section>
