@@ -1,4 +1,4 @@
-<!-- ---
+---
 top: interactive
 layout: post
 comments: true
@@ -17,7 +17,6 @@ featured_image: '/images/nestseekers/outer_thumbnail.png'
 
 This map uses mapbox for background layers and deck.gl's ```HexagonLayer``` layer to display impressive 3D bars on top of mapbox
 
-Project is live already and we can see it online on  [Nestseekers site](https://www.nestseekers.com/Guides/InteractiveHeatMap).
 
 You can click on top KPI's to display other information's
 
@@ -73,4 +72,4 @@ If we zoom detailed enough, we even can see 3D buildings
 
 
 
- -->
+
