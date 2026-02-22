@@ -2,11 +2,11 @@
 top: interactive
 layout: post
 comments: true
-title: 'Occamlabs - Interactive Map'
+title: 'Nestseekers - Interactive Map'
 subtitle: 'mapbox, deck.gl, d3.js, bootstrap, sass, webpack'
 date: 2018-11-01 00:00:00
 description:  .
-featured_image: '/images/nestseekers/outer_thumbnail.png'
+featured_image: '/images/projects/nestseekers/outer_thumbnail.png'
 ---
 
 
@@ -20,22 +20,22 @@ This map uses mapbox for background layers and deck.gl's ```HexagonLayer``` laye
 
 You can click on top KPI's to display other information's
 
-![](/images/nestseekers/click_other_kpi.png)
+![](/images/projects/nestseekers/click_other_kpi.png)
 
 
 Hover over the bars, to reveal additional insights
 
 
-![](/images/nestseekers/hover_bar.png)
+![](/images/projects/nestseekers/hover_bar.png)
 
 Continent insights
 
-![](/images/nestseekers/continent_insights.png)
+![](/images/projects/nestseekers/continent_insights.png)
 
 
 City insights
 
-![](/images/nestseekers/city_insights.png)
+![](/images/projects/nestseekers/city_insights.png)
 
 
 
@@ -45,13 +45,13 @@ By clicking the city, we can show detailed view of map, where more than 50K + po
 Where we can filter by category, price, see the details of each point and e.t.c
 
 
-![](/images/nestseekers/details.png)
+![](/images/projects/nestseekers/details.png)
 
 If we zoom detailed enough, we even can see 3D buildings
 
 
 
-![](/images/nestseekers/burj_khalifa.png)
+![](/images/projects/nestseekers/burj_khalifa.png)
 
 
 ---
@@ -60,13 +60,13 @@ If we zoom detailed enough, we even can see 3D buildings
 
 
 <div class="gallery" data-columns="3">
-	<img src="/images/nestseekers/click_other_kpi.png">
-	<img src="/images/nestseekers/hover_bar.png">
-	<img src="/images/nestseekers/continent_insights.png">
-	<img src="/images/nestseekers/city_insights.png">
-    <img src="/images/nestseekers/details.png">
-	<img src="/images/nestseekers/burj_khalifa.png">
-	<img src='/images/nestseekers/outer_thumbnail.png'>
+	<img src="/images/projects/nestseekers/click_other_kpi.png">
+	<img src="/images/projects/nestseekers/hover_bar.png">
+	<img src="/images/projects/nestseekers/continent_insights.png">
+	<img src="/images/projects/nestseekers/city_insights.png">
+    <img src="/images/projects/nestseekers/details.png">
+	<img src="/images/projects/nestseekers/burj_khalifa.png">
+	<img src='/images/projects/nestseekers/outer_thumbnail.png'>
 	
 </div>
 
