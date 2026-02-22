@@ -6,12 +6,18 @@ title: 'Nestseekers - Interactive Map'
 subtitle: 'mapbox, deck.gl, d3.js, bootstrap, sass, webpack'
 date: 2018-11-01 00:00:00
 description:  .
-featured_image: '/images/projects/nestseekers/outer_thumbnail.png'
+featured_image: '/images/projects/nestseekers/thumbnail.mp4'
 ---
 
 
 
 
+
+<div style="margin-bottom:60px;overflow:hidden;width:100%;display:flex;justify-content:center">
+<video style="width:90%;margin-top:-10px;" autoplay loop muted playsinline  >
+	<source src="/images/projects/nestseekers/video.mp4" type="video/mp4">
+</video>
+</div>
 
 ## Details
 
