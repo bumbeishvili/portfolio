@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "Edelman - Trust Barometer (25 Years)"
+title: "Edelman - Trust Barometer"
 subtitle: "d3.js, frontend engineering"
 description: "Interactive storytelling and data experience for Edelman Trust Barometer, highlighting 25 years of trust trends and global inflection points."
 featured_image: "/images/projects/edelman-barometer-lines/thumbnail.mp4"
