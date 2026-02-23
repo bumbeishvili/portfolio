@@ -189,43 +189,71 @@
 			toggleFullScreen();
 		}
 
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-			console.log('triggered', 500)
-		}, 500)
+		// Re-layout masonry grids after all videos have loaded their metadata
+		(function relayoutMasonryOnVideoLoad() {
+			console.log('[masonry-fix] Starting video-aware masonry relayout');
+			var wrap = document.querySelector('.portfolio-wrap');
+			if (!wrap) {
+				console.log('[masonry-fix] No .portfolio-wrap found, skipping');
+				return;
+			}
 
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-			console.log('triggered', 1000)
+			var videos = wrap.querySelectorAll('video');
+			console.log('[masonry-fix] Found ' + videos.length + ' videos in .portfolio-wrap');
+			if (videos.length === 0) return;
 
-		}, 1000)
+			var loaded = 0;
+			var total = videos.length;
 
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			console.log('triggered', 2000)
-		}, 2000)
+			function tryRelayout() {
+				loaded++;
+				console.log('[masonry-fix] Video ' + loaded + '/' + total + ' ready, triggering relayout');
+				// Trigger resize so masonry recalculates
+				window.dispatchEvent(new Event('resize'));
+				// Also directly call masonry layout if jQuery is available
+				if (window.jQuery && jQuery.fn.masonry) {
+					var $wrap = jQuery('.portfolio-wrap');
+					if ($wrap.data('masonry')) {
+						$wrap.masonry('layout');
+						console.log('[masonry-fix] Masonry layout() called successfully');
+					} else {
+						console.warn('[masonry-fix] Masonry not yet initialized on .portfolio-wrap');
+					}
+				} else {
+					console.warn('[masonry-fix] jQuery or masonry plugin not available');
+				}
+			}
 
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			console.log('triggered', 5000)
-		}, 5000)
+			videos.forEach(function(vid, index) {
+				if (vid.readyState >= 1) {
+					console.log('[masonry-fix] Video ' + index + ' already has metadata (readyState=' + vid.readyState + ')');
+					tryRelayout();
+				} else {
+					console.log('[masonry-fix] Video ' + index + ' waiting for loadedmetadata (readyState=' + vid.readyState + ')');
+					vid.addEventListener('loadedmetadata', function() {
+						console.log('[masonry-fix] Video ' + index + ' loadedmetadata fired');
+						tryRelayout();
+					}, { once: true });
+				}
+			});
 
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			console.log('triggered', 10000)
-		}, 10000)
-
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			console.log('triggered', 15000)
-		}, 15000)
-
-		setTimeout(d => {
-			window.dispatchEvent(new Event('resize'));
-			console.log('triggered', 20000)
-		}, 20000)
+			// Safety net: if masonry still hasn't been initialized, wait and retry
+			setTimeout(function() {
+				console.log('[masonry-fix] Safety net check at 3s — loaded: ' + loaded + '/' + total);
+				if (window.jQuery && jQuery.fn.masonry) {
+					var $wrap = jQuery('.portfolio-wrap');
+					if (!$wrap.data('masonry')) {
+						console.warn('[masonry-fix] Safety net: masonry never initialized, doing it now');
+						$wrap.masonry({ itemSelector: '.portfolio-item', transitionDuration: 0 });
+					} else {
+						console.log('[masonry-fix] Safety net: masonry exists, calling layout()');
+						$wrap.masonry('layout');
+					}
+				} else {
+					console.error('[masonry-fix] Safety net: jQuery or masonry plugin still not available at 3s');
+				}
+			}, 3000);
+		})();
 
 		function toggleFullScreen() {
 			window.full = !window.full;

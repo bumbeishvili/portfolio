@@ -162,83 +162,31 @@
 
 		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Show content
 
-		// Helper: wait for all videos in a container to have metadata loaded
-		function videosReady($container) {
-			var videos = $container.find('video');
-			if (videos.length === 0) {
-				return $.Deferred().resolve().promise();
-			}
-			var promises = [];
-			videos.each(function() {
-				var def = $.Deferred();
-				var vid = this;
-				if (vid.readyState >= 1) {
-					// Metadata already loaded
-					def.resolve();
-				} else {
-					$(vid).one('loadedmetadata', function() { def.resolve(); });
-					// Fallback timeout in case metadata never fires (e.g. video fails to load)
-					setTimeout(function() { def.resolve(); }, 5000);
-				}
-				promises.push(def.promise());
-			});
-			return $.when.apply($, promises);
-		}
-
-		// Helper: initialize masonry on a container, waiting for both images and videos
-		function initMasonry($wrap, itemSelector) {
-			if ($wrap.length === 0) return;
-
-			// Wait for images
-			$wrap.imagesLoaded(function() {
-				// Also wait for videos
-				videosReady($wrap).then(function() {
-					$wrap.masonry({
-						itemSelector: itemSelector,
-						transitionDuration: 0
-					});
-
-					// Re-layout after a short delay for any remaining media settling
-					setTimeout(function() {
-						$wrap.masonry('layout');
-					}, 500);
+		// Wait until first image has loaded
+		$('.page__content').find('img:first').imagesLoaded( function() {
+	
+			// Portfolio grid layout
+			$('.portfolio-wrap').imagesLoaded( function() {
+				$('.portfolio-wrap').masonry({
+					itemSelector: '.portfolio-item',
+					transitionDuration: 0
 				});
 			});
-		}
-
-		// Determine when initial content is ready (images or videos)
-		var $content = $('.page__content');
-		var $firstImg = $content.find('img:first');
-		var hasVideos = $content.find('video').length > 0;
-
-		function onContentReady() {
-			// Portfolio grid layout
-			initMasonry($('.portfolio-wrap'), '.portfolio-item');
 
 			// Blog grid layout
-			initMasonry($('.blog-wrap'), '.blog-post');
+			$('.blog-wrap').imagesLoaded( function() {
+				$('.blog-wrap').masonry({
+					itemSelector: '.blog-post',
+					transitionDuration: 0
+				});
+			});
 
 			// Show the content
 			$('body').removeClass('loading');
 
 			// Hide the menu
 			$('body').removeClass('menu--open');
-		}
-
-		if ($firstImg.length > 0) {
-			// Has images — wait for the first one, then proceed
-			$firstImg.imagesLoaded(function() {
-				onContentReady();
-			});
-		} else if (hasVideos) {
-			// No images but has videos — wait for video metadata
-			videosReady($content).then(function() {
-				onContentReady();
-			});
-		} else {
-			// No images or videos — proceed immediately
-			onContentReady();
-		}
+		});
 
 
 
