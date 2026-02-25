@@ -15,9 +15,7 @@ featured_image: '/images/projects/nautical-cloud/wind.mp4'
 A boat race visualization platform that brings maritime racing data to life.
 <br><br>
 My contribution focused on implementing wind and current flow particle systems, adding dynamic environmental context to the race replays.
-
 <br><br>
-
 The particle animations visualize real-time wind direction and ocean current patterns, giving viewers an intuitive understanding of the conditions affecting each race.
 <br><br>
 Wind particles flow across the map showing gusts and shifts, while current flow particles reveal the underwater forces influencing boat speed and strategy.
