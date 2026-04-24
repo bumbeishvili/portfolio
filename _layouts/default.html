@@ -189,70 +189,66 @@
 			toggleFullScreen();
 		}
 
-		// Re-layout masonry grids after all videos have loaded their metadata
-		(function relayoutMasonryOnVideoLoad() {
-			console.log('[masonry-fix] Starting video-aware masonry relayout');
-			var wrap = document.querySelector('.portfolio-wrap');
-			if (!wrap) {
-				console.log('[masonry-fix] No .portfolio-wrap found, skipping');
-				return;
-			}
+		// Keep masonry layout in sync whenever any grid item changes size
+		// (videos resolving their intrinsic aspect ratio, images loading, fonts, etc.)
+		// Works on both initial load AND after AJAX page navigation.
+		function attachMasonryResizeObserver(wrap) {
+			if (!wrap || typeof ResizeObserver === 'undefined') return;
+			if (wrap.__masonryResizeAttached) return;
+			wrap.__masonryResizeAttached = true;
 
-			var videos = wrap.querySelectorAll('video');
-			console.log('[masonry-fix] Found ' + videos.length + ' videos in .portfolio-wrap');
-			if (videos.length === 0) return;
-
-			var loaded = 0;
-			var total = videos.length;
-
-			function tryRelayout() {
-				loaded++;
-				console.log('[masonry-fix] Video ' + loaded + '/' + total + ' ready, triggering relayout');
-				// Trigger resize so masonry recalculates
-				window.dispatchEvent(new Event('resize'));
-				// Also directly call masonry layout if jQuery is available
-				if (window.jQuery && jQuery.fn.masonry) {
-					var $wrap = jQuery('.portfolio-wrap');
+			var rafPending = false;
+			function scheduleRelayout() {
+				if (rafPending) return;
+				rafPending = true;
+				requestAnimationFrame(function() {
+					rafPending = false;
+					if (!(window.jQuery && jQuery.fn.masonry)) return;
+					var $wrap = jQuery(wrap);
 					if ($wrap.data('masonry')) {
 						$wrap.masonry('layout');
-						console.log('[masonry-fix] Masonry layout() called successfully');
 					} else {
-						console.warn('[masonry-fix] Masonry not yet initialized on .portfolio-wrap');
+						$wrap.masonry({ itemSelector: '.portfolio-item', transitionDuration: 0 });
 					}
-				} else {
-					console.warn('[masonry-fix] jQuery or masonry plugin not available');
-				}
+				});
 			}
 
-			videos.forEach(function(vid, index) {
-				if (vid.readyState >= 1) {
-					console.log('[masonry-fix] Video ' + index + ' already has metadata (readyState=' + vid.readyState + ')');
-					tryRelayout();
-				} else {
-					console.log('[masonry-fix] Video ' + index + ' waiting for loadedmetadata (readyState=' + vid.readyState + ')');
-					vid.addEventListener('loadedmetadata', function() {
-						console.log('[masonry-fix] Video ' + index + ' loadedmetadata fired');
-						tryRelayout();
-					}, { once: true });
+			var ro = new ResizeObserver(scheduleRelayout);
+			wrap.querySelectorAll('.portfolio-item').forEach(function(item) {
+				ro.observe(item);
+			});
+		}
+
+		// Run on initial page load
+		(function() {
+			var wrap = document.querySelector('.portfolio-wrap');
+			if (wrap) attachMasonryResizeObserver(wrap);
+		})();
+
+		// Watch for AJAX content changes (new .portfolio-wrap added after navigation)
+		(function() {
+			var page = document.querySelector('.page');
+			if (!page) return;
+
+			var observer = new MutationObserver(function(mutations) {
+				for (var i = 0; i < mutations.length; i++) {
+					for (var j = 0; j < mutations[i].addedNodes.length; j++) {
+						var node = mutations[i].addedNodes[j];
+						if (node.nodeType !== 1) continue;
+
+						var wrap = node.classList && node.classList.contains('portfolio-wrap')
+							? node
+							: node.querySelector && node.querySelector('.portfolio-wrap');
+
+						if (wrap) {
+							attachMasonryResizeObserver(wrap);
+							return;
+						}
+					}
 				}
 			});
 
-			// Safety net: if masonry still hasn't been initialized, wait and retry
-			setTimeout(function() {
-				console.log('[masonry-fix] Safety net check at 3s — loaded: ' + loaded + '/' + total);
-				if (window.jQuery && jQuery.fn.masonry) {
-					var $wrap = jQuery('.portfolio-wrap');
-					if (!$wrap.data('masonry')) {
-						console.warn('[masonry-fix] Safety net: masonry never initialized, doing it now');
-						$wrap.masonry({ itemSelector: '.portfolio-item', transitionDuration: 0 });
-					} else {
-						console.log('[masonry-fix] Safety net: masonry exists, calling layout()');
-						$wrap.masonry('layout');
-					}
-				} else {
-					console.error('[masonry-fix] Safety net: jQuery or masonry plugin still not available at 3s');
-				}
-			}, 3000);
+			observer.observe(page, { childList: true, subtree: true });
 		})();
 
 		function toggleFullScreen() {
@@ -327,7 +323,7 @@
 					const interval = setInterval(d => {
 						console.log('tried', trial++)
 						if (trial == 15) {
-							//clearInterval(interval);
+							clearInterval(interval);
 						}
 						if (document.querySelector('.script-this')) {
 							s = document.createElement('script');
@@ -340,7 +336,7 @@
 								s.text = code;
 								document.body.appendChild(s);
 							}
-							//clearInterval(interval)
+							clearInterval(interval)
 						}
 					}, 300)
 
