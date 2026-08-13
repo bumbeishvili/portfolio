@@ -20,6 +20,9 @@ It connects users with role guidance, local salary context, and career resources
 <br/>
 Live website: [explore.comptia.org](https://explore.comptia.org/).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/) — [read the case study](https://infogr8.com/our-work/comptia-career-explorer-2/).
+
 <div class="gallery" data-columns="3">
   <img src="/images/projects/comptia-job-exploration/1.png">
   <img src="/images/projects/comptia-job-exploration/2.png">

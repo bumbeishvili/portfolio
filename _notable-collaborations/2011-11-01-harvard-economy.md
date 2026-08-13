@@ -20,6 +20,9 @@ It covers economic conditions, policy flows, and energy-transition signals to su
 <br/>
 Live website: [economyinplace.com](https://economyinplace.com/).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/).
+
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/harvard-economy/1.png">
 	<img src="/images/projects/harvard-economy/2.png">

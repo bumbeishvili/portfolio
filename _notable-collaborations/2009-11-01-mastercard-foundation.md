@@ -15,6 +15,5 @@ featured_image: "/images/projects/mastercard-foundation/thumbnail.mp4"
 
 Interactive dashboard project developed for Mastercard Foundation.
 
-
-
-
+<br/>
+In partnership with [infogr8](https://infogr8.com/).

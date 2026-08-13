@@ -26,6 +26,9 @@ Core sections include:
 <br/>
 Live website: [edelman.com/trust/25years](https://www.edelman.com/trust/25years).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/).
+
 <div class="gallery" data-columns="3">
   <img src="/images/projects/edelman-barometer-lines/1.png">
   <img src="/images/projects/edelman-barometer-lines/2.png">

@@ -24,6 +24,9 @@ More than 22 million public servants work across federal, state and local govern
 <br/>
 Live website: [publicservantproject.hks.harvard.edu](https://publicservantproject.hks.harvard.edu/).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/).
+
 <div class="gallery" data-columns="2">
 	<img src="/images/projects/public-servant/1.png">
 	<img src="/images/projects/public-servant/2.png">

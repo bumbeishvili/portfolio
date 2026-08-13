@@ -31,6 +31,6 @@ I am always available to discuss potential data visualization projects with well
 
 Truth be told, I receive multiple potential project requests weekly, often seeking a chat or scheduling a video call without explaining project details first. While I understand that many initial stage projects lack well-defined details, considering my current schedule, it's impossible for me to respond to similar requests. For scenarios like this, I usually offer a [paid consultation](https://www.fiverr.com/bumbeishvili/give-1h-d3-js-consultation).
 
-If you are an HR, who might have a potential remote role involving data visualization and interested  in my resume -  <a href="https://github.com/bumbeishvili/portfolio/files/8860374/resume_david_b.1.pdf">download it here</a>
+If you are an HR, who might have a potential remote role involving data visualization and interested  in my resume -  <a href="https://docs.google.com/document/d/13GcbLmi36Noa6bY8yw8Jj8gWL7Jnw2PgyFs1gGZGmBk/edit?tab=t.0">read it here</a>
 
 

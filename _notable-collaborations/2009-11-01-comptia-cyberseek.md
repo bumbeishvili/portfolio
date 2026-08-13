@@ -20,6 +20,9 @@ It includes Workforce Map, Career Pathway, and Education & Training dashboards, 
 <br/>
 Live website: [cyberseek.org](https://www.cyberseek.org/).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/) — [read the case study](https://infogr8.com/our-work/cyberseek-data-tool/).
+
 <div class="gallery" data-columns="3">
   <img src="/images/projects/comptia-cyberseek/1.png">
   <img src="/images/projects/comptia-cyberseek/2.png">

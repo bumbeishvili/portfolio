@@ -21,6 +21,9 @@ The Workforce Almanac maps 20,000+ U.S. training providers in one integrated, op
 <br/>
 Live website: [workforcealmanac.com](https://workforcealmanac.com/).
 
+<br/>
+In partnership with [infogr8](https://infogr8.com/) — [read the case study](https://infogr8.com/our-work/harvard-kennedy-school-workforce-almanac/).
+
 <div class="gallery" data-columns="3">
 	<img src="/images/projects/harvard-workforce/1.png">
 	<img src="/images/projects/harvard-workforce/2.png">

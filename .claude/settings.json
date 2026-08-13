@@ -49,7 +49,14 @@
       "Read(//Users/datobumbeishvili/Library/Caches/ms-playwright/**)",
       "WebFetch(domain:publicservantproject.hks.harvard.edu)",
       "Bash(curl -s http://127.0.0.1:4000/notable-collaborations/public-servant-project)",
-      "Bash(curl -s http://127.0.0.1:4000/blog/mcp-ai-hackathon)"
+      "Bash(curl -s http://127.0.0.1:4000/blog/mcp-ai-hackathon)",
+      "Bash(npm root *)",
+      "Bash(NODE_PATH=__CMDSUB_OUTPUT__ node -e ' *)",
+      "Bash(curl -s -m 25 \"https://api.github.com/repos/bumbeishvili/org-chart\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(d.get\\('stargazers_count'\\), '| forks', d.get\\('forks_count'\\)\\)\")",
+      "Bash(curl -s -m 25 \"https://api.npmjs.org/downloads/point/last-month/d3-org-chart\")",
+      "Bash(python3 -c \"import json,sys; print\\(json.load\\(sys.stdin\\).get\\('downloads'\\)\\)\")",
+      "Bash(curl -s -m 25 \"https://api.npmjs.org/downloads/point/last-year/d3-org-chart\")"
     ]
   }
 }

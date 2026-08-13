@@ -17,6 +17,3 @@ Built a dynamic org chart for Sequoia Capital with a custom compact layout to ke
 
 Implemented drag-and-drop support for direct interaction and smoother navigation through large hierarchies.
 
-
-
-
