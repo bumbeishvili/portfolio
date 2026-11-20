@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta name="google-site-verification" content="mlDLQKB11r7ey0NuE33ruH9zHnhYdfKpwezlM7Ms3Dw" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="shortcut icon" href="%sveltekit.assets%/images/favicon.png" />
+		<link rel="alternate" type="application/rss+xml" title="David B. – Projects" href="/projects.xml" />
+		<link rel="alternate" type="application/rss+xml" title="David B. – Blog" href="/feed.xml" />
+
+		<!-- Fonts: served from this site (src/lib/styles/_fonts.scss). The two used on every page are fetched early. -->
+		<link rel="preload" href="%sveltekit.assets%/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+		<link rel="preload" href="%sveltekit.assets%/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+		<!-- Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-626FHFHE7M"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-626FHFHE7M');
+		</script>
+
+		%sveltekit.head%
+	</head>
+
+	<!-- "loading" hides the page behind the loader until the first image is in (see +layout.svelte) -->
+	<body class="loading" data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

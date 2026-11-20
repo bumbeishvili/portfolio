@@ -1,0 +1,19 @@
+{
+ "nodejs": "node.js",
+ "vuew": "vue",
+ "wsml": "wasm",
+ "scrollable story": "scrollytelling",
+ "r3f": "react three fiber",
+ "circle-pack": "circle packing",
+ "hexmap": "hex map",
+ "mindmap": "mind map",
+ "realtime": "real-time",
+ "d3": "d3.js",
+ "data-analysis": "data analysis",
+ "data-wrangling": "data wrangling",
+ "data-pipeline": "data pipeline",
+ "data-table": "data table",
+ "stock-market": "stock market",
+ "cron-jobs": "cron jobs",
+ "class-diagram": "class diagram"
+}

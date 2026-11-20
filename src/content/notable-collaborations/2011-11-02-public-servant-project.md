@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Harvard - Public Servant Project"
+year: 2026
+tags: [d3.js, map, svelte, typescript, tailwind, node.js, chart, cms, accessibility, full-stack, website, workforce, data visualization, cloudflare, gsap, python, web app, data, data analysis, data wrangling, figma]
+subtitle: "d3.js, frontend engineering"
+description: "A national hub for data and evidence about the people of government."
+featured_image: "/images/projects/public-servant/thumbnail.mp4"
+---
+
+<div style="margin-bottom:60px;overflow:hidden;width:100%;display:flex;justify-content:center">
+<video style="width:90%;margin-top:-10px;" autoplay loop muted playsinline>
+  <source src="/images/projects/public-servant/vid.mp4" type="video/mp4">
+</video>
+</div>
+
+The Public Servant Project is a national hub for data and evidence about the people of government, created by The People Lab and based at the Harvard Kennedy School.
+
+More than 22 million public servants work across federal, state and local government in the US. The site gathers evidence on their experience and on how the public sees them.
+
+- **Public Servant Pulse** — an annual national survey of state and local government employees, measuring satisfaction, engagement, burnout, psychological safety and belonging, aggregated into nationwide benchmarks.
+- **Perceptions of Public Servants** — quarterly nationally representative surveys tracking how Americans view public sector workers and what shifts those views.
+- **What Works Hub** — evidence on recruiting, retaining and supporting government talent.
+
+<br/>
+Live website: [publicservantproject.hks.harvard.edu](https://publicservantproject.hks.harvard.edu/).
+
+<br/>
+In partnership with [infogr8](https://infogr8.com/).
+
+<div class="gallery" data-columns="2">
+	<img src="/images/projects/public-servant/1.webp">
+	<img src="/images/projects/public-servant/2.webp">
+	<img src="/images/projects/public-servant/3.webp">
+	<img src="/images/projects/public-servant/4.webp">
+</div>
+
+Charts from the Public Servant Pulse report.
+
+<div class="gallery" data-columns="2">
+	<img src="/images/projects/public-servant/pulse-report-respondents-map.webp">
+	<img src="/images/projects/public-servant/pulse-report-workforce-health.webp">
+	<img src="/images/projects/public-servant/pulse-report-workplace-satisfaction.webp">
+	<img src="/images/projects/public-servant/pulse-report-burnout.webp">
+	<img src="/images/projects/public-servant/pulse-report-intent-to-leave.webp">
+</div>
+
+The Public Servant Pulse data explorer in its three modes.
+
+<div class="gallery" data-columns="2">
+	<img src="/images/projects/public-servant/pulse-explorer-explore.webp">
+	<img src="/images/projects/public-servant/pulse-explorer-compare.webp">
+	<img src="/images/projects/public-servant/pulse-explorer-regression.webp">
+</div>

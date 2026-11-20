@@ -1,0 +1,438 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// - - - - - - - - - - - - - - - - - -
+
+// Header + menu
+
+// - - - - - - - - - - - - - - - - - -
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Header
+
+.header {
+	padding: 20px;
+
+	@include mq(tabletp) {
+		padding: 40px;
+	}
+
+	@include mq(tabletl) {
+		position: fixed;
+		overflow: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: 30%;
+		padding: 0;
+	}
+}
+
+.header__content {
+
+	@include mq(tabletl) {
+		position: relative;
+		min-height: 100vh;
+		padding: 40px 40px 135px;
+	}
+
+	@include mq(laptop) {
+		padding: 60px 60px 145px;
+	}
+}
+
+.header__logo {
+	display: block;
+	width: $logo-width;
+	max-width: 80%;
+
+	@include mq(tabletp) {
+		float: left;
+		max-width: 50%;
+	}
+}
+
+.header__logo__img {
+	width: 100%;
+	height: auto;
+}
+
+.header__title {
+	font-size: $sitetitle-small;
+	font-weight: $sitetitle-weight;
+	letter-spacing: $sitetitle-spacing;
+	line-height: 1;
+	color: $text-dark-color;
+
+	&:hover {
+		color: $accent-color;
+	}
+
+	@include mq(tabletp) {
+		font-size: $sitetitle-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $sitetitle-large;
+	}
+}
+
+.header__tagline {
+	margin-top: 35px;
+	font-family: $title-font;
+	font-size: $sitetagline-small;
+	font-weight: $sitetagline-weight;
+	letter-spacing: $sitetagline-spacing;
+	line-height: $sitetagline-lineheight;
+	color: $text-medium-color;
+
+	@include mq(tabletp) {
+		font-size: $sitetagline-medium;
+	}
+
+	@include mq(laptop) {
+		margin-top: 35px;
+		font-size: $sitetagline-large;
+	}
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Menu
+
+.menu {
+	
+	@include mq(tabletl) {
+		margin-top: 20px;
+	}
+
+	@include mq(laptop) {
+		margin-top: 30px;
+	}
+}
+
+.menu__toggle {
+	position: absolute;
+	z-index: 100;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 20px;
+	color: $text-dark-color;
+
+	@include mq(tabletp) {
+		top: 40px;
+		right: 40px;
+	}
+	
+	@include mq(tabletl) {
+		display: none;
+	}
+}
+
+.menu__toggle__icon {
+	float: right;
+	position: relative;
+	width: 24px;
+	height: 20px;
+	margin-left: 8px;
+
+	span, span:before, span:after {
+		content: '';
+		position: absolute;
+		top: 8px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		@include transition(all 0.1s);
+		background: $text-dark-color;
+	}
+
+	span:before {
+		top: -8px;
+	}
+
+	span:after {
+		top: 8px;
+	}
+}
+
+.menu--open .menu__toggle__icon {
+
+	span:before, span:after {
+		background: $overlay-text-color !important;
+	}
+		
+	span {
+		background-color: transparent !important;
+	}
+	
+	span:before,
+	span:after {
+		top: 0;
+	}
+	
+	span:before {
+		@include rotate(45);
+	}
+
+	span:after {
+		@include rotate(-45);
+	}
+}
+
+.menu__wrap {
+	position: fixed;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba($overlay-background-color,0.95);
+	overflow: auto;
+
+	visibility: hidden;
+	opacity: 0;
+	@include transition(all 0.2s ease-in-out);
+
+	@include mq(tabletl) {
+		position: relative;
+		background: transparent;
+		visibility: visible;
+		overflow: visible;
+		opacity: 1;
+		@include transition(none);
+	}
+}
+
+.menu--open .menu__wrap {
+	visibility: visible;
+	opacity: 1;
+}
+
+.menu__list {
+	list-style: none;
+	margin: 0 auto;
+	padding: 12px 20px;
+
+	@include mq(tabletp) {
+		padding: 30px 40px;
+	}
+
+	@include mq(tabletl) {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.menu__list__item {
+
+}
+
+.menu__list__item__link {
+	font-size: $menu-small;
+	font-weight: $menu-weight;
+	color: $overlay-text-color;
+	padding: 10px 0;
+
+	&:hover {
+		color: $overlay-accent-color;
+	}
+
+	@include mq(tabletl) {
+		padding: 0;
+		font-size: $menu-medium;
+		color: $text-dark-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}
+
+	@include mq(laptop) {
+		font-size: $menu-large;
+	}
+	
+	&.active-link {
+		color: $overlay-accent-color;
+
+		@include mq(tabletl) {
+			color: $accent-color;
+		}
+	}
+}
+
+// Keep the parent item highlighted while one of its sub-tabs is the current page
+.menu__list__item:has(.menu__sublist .active-link) > .menu__list__item__link {
+	color: $overlay-accent-color;
+
+	@include mq(tabletl) {
+		color: $accent-color;
+	}
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Sub-tabs (e.g. Projects: All / 2D / 3D)
+
+.menu__sublist {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 2px 0 14px;
+	padding: 0;
+	font-size: 0;
+	line-height: 1;
+
+	@include mq(tabletl) {
+		margin: 2px 0 8px;
+	}
+}
+
+.menu__sublist__item {
+	margin: 0 8px 0 0;
+
+	@include mq(tabletl) {
+		margin-right: 4px;
+	}
+}
+
+.menu__sublist__link {
+	display: block;
+	padding: 8px 16px;
+	border-radius: 100px;
+	font-size: 18px;
+	font-weight: $menu-weight;
+	line-height: 1;
+	color: rgba($overlay-text-color, 0.75);
+	@include transition(color 0.15s, background-color 0.15s);
+
+	&:hover {
+		color: $overlay-text-color;
+	}
+
+	&.active-link {
+		background: $overlay-text-color;
+		color: $overlay-background-color;
+	}
+
+	@include mq(tabletl) {
+		padding: 6px 12px;
+		font-size: 13px;
+		color: $text-medium-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+
+		&.active-link {
+			background: rgba($accent-color, 0.1);
+			color: $accent-color;
+		}
+	}
+
+	@include mq(laptop) {
+		font-size: 14px;
+	}
+}
+
+// On a screen with a mouse, the sub-tabs stay tucked away until their parent item is hovered (or
+// reached with the keyboard), or while one of them is the current page. A small chevron next to
+// the parent hints that there is more. Touch screens and the mobile menu always show the tabs.
+
+@media only screen and (min-width: $break-tabletl) and (hover: hover) {
+
+	.menu__list__item--parent > .menu__list__item__link::after {
+		content: '';
+		display: inline-block;
+		width: 5px;
+		height: 5px;
+		margin-left: 9px;
+		border-right: 1.5px solid currentColor;
+		border-bottom: 1.5px solid currentColor;
+		opacity: 0.45;
+		transform: translateY(-2px) rotate(-45deg);
+		transition: transform 0.2s ease, opacity 0.2s ease;
+	}
+
+	.menu__sublist {
+		max-height: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		overflow: hidden;
+		opacity: 0;
+		visibility: hidden;
+		// closing waits a moment, so the row does not snap shut when the pointer slips off
+		transition: max-height 0.2s ease 0.15s, margin 0.2s ease 0.15s, opacity 0.15s ease 0.15s, visibility 0s linear 0.35s;
+	}
+
+	.menu__list__item--parent:hover,
+	.menu__list__item--parent:focus-within,
+	.menu__list__item--parent:has(.menu__sublist .active-link) {
+
+		> .menu__list__item__link::after {
+			opacity: 1;
+			transform: translateY(-3px) rotate(45deg);
+		}
+
+		> .menu__sublist {
+			max-height: 40px;
+			margin-top: 2px;
+			margin-bottom: 8px;
+			opacity: 1;
+			visibility: visible;
+			transition-delay: 0s;
+		}
+	}
+}
+
+.menu__button {
+	margin-top: 15px;
+	padding: 15px 20px 16px;
+	font-size: 13px;
+
+	@include mq(tabletl) {
+		margin-top: 0;
+		padding: 11px 20px 12px;
+		font-size: 15px;
+	}
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Projects menu
+
+.projects-menu {
+	display: none;
+	
+	@include mq(tabletl) {
+		display: block;
+		margin-top: 20px;
+	}
+
+	@include mq(laptop) {
+		margin-top: 30px;
+	}
+}
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Lower
+
+.header__lower {
+	display: none;
+
+	@include mq(tabletl) {
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		left: 40px;
+	}
+
+	@include mq(laptop) {
+		bottom: 40px;
+		left: 60px;
+	}
+}

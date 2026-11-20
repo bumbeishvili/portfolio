@@ -1,0 +1,182 @@
+@use 'sass:math';
+@use '../variables' as *;
+@use '../mixins' as *;
+
+// - - - - - - - - - - - - - - - - - -
+
+// Portfolio
+
+// - - - - - - - - - - - - - - - - - -
+
+.portfolio {
+	margin-top: 0;
+	padding: math.div($grid-spacing, 2);
+}
+
+.portfolio-wrap {
+	container-type: inline-size;
+
+	// plain cards: 10px padding and a 1px border on each side
+	&:not(.gray-cards) {
+		@include columns-by-thumbnail('.portfolio-item', 22px);
+	}
+
+	// gray cards: 17px around the card, 35px inside it (see .gray-cards in _overrides.scss)
+	&.gray-cards {
+		@include columns-by-thumbnail('.portfolio-item', 104px);
+	}
+
+	// keeps the grid's height until the masonry script has positioned the cards,
+	// so a divider below never slides up underneath them
+	&::after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+// Divider between groups of cards: a large label followed by a rule (the years on the All tab)
+.portfolio-divider {
+	clear: both;
+	display: flex;
+	align-items: center;
+	margin: 34px 0 6px;
+	padding: 0 math.div($grid-spacing, 2);
+	font-family: $body-font;
+	font-size: 30px;
+	font-weight: $bold-weight;
+	letter-spacing: -0.02em;
+	line-height: 1;
+	color: $text-dark-color;
+
+	// the rule
+	&::after {
+		content: '';
+		flex: 1;
+		height: 2px;
+		margin-left: 20px;
+		background: $border-color;
+	}
+
+	&:first-child {
+		margin-top: 14px;
+	}
+
+	@include mq(tabletp) {
+		font-size: 38px;
+	}
+
+	// from this width the cards sit inside a 17px gutter (see .gray-cards in _overrides.scss)
+	@media only screen and (min-width: 1000px) {
+		margin-top: 60px;
+		padding: 0 17px;
+
+		&:first-child {
+			margin-top: 30px;
+		}
+	}
+}
+
+.portfolio-item {
+	position: relative;
+	padding: math.div($grid-spacing, 2);
+	float: left;
+	width: 50%;
+}
+
+.portfolio-item__link {
+	position: relative;
+	display: block;
+
+	@include mq(tabletl) {
+
+		&:hover {
+
+			.portfolio-item__content {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.portfolio-item__image {
+	position: relative;
+	overflow:hidden; 
+
+	// still-image thumbnails fill the card like the videos do
+	img {
+		width: 100%;
+		// the height follows the width (the width and height attributes only give the proportions)
+		height: auto;
+	}
+}
+
+// The clip of a card lies exactly over its still and appears once it is playing.
+.portfolio-item__clip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0;
+	transition: opacity 0.25s;
+
+	&.is-playing {
+		opacity: 1;
+	}
+}
+
+.portfolio-item__content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba($overlay-background-color, $overlay-opacity);
+
+	opacity: 0;
+	visibility: hidden;
+	@include transition(all 0.2s ease-in-out);
+}
+
+.portfolio-item__info {
+	text-align: center;
+	// a long word in a title ("Opportunity@Work") must not push a narrow card wider than its column
+	overflow-wrap: anywhere;
+}
+
+.portfolio-item__title {
+	color: $overlay-text-color;
+	font-size: $grid-item-title-small;
+	font-weight: $grid-item-title-weight;
+	letter-spacing: $grid-item-title-spacing;
+
+	@include mq(tabletp) {
+		font-size: $grid-item-title-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $grid-item-title-large;
+	}
+}
+
+.portfolio-item__subtitle {
+	margin-top: 5px;
+	color: rgba($overlay-text-color, 0.7);
+	font-size: $grid-item-subtitle-small;
+	font-weight: $grid-item-subtitle-weight;
+	letter-spacing: $grid-item-subtitle-spacing;
+
+	@include mq(tabletp) {
+		font-size: $grid-item-subtitle-medium;
+	}
+
+	@include mq(laptop) {
+		font-size: $grid-item-subtitle-large;
+	}
+}

@@ -1,0 +1,52 @@
+# This repository is public. Next to the scripts, this folder holds recordings, screenshots and
+# notes that name private client repositories, so git takes only the files listed below.
+# Everything else stays on disk and out of git.
+/*
+!/.gitignore
+!/README.md
+!/package.json
+!/package-lock.json
+
+# tag editor (the list it saves is a working file)
+!/tag-editor/
+/tag-editor/tags-edited.json
+/tag-editor/added-outside.json
+
+# page generator. Its per-project lists (texts.js, shots.js, tags.json, and meta/tags.js below)
+# name projects that are hidden, so they stay on this machine with the other project lists.
+!/gh/
+/gh/*
+!/gh/generate.js
+!/gh/posters.js
+!/gh/hidden-assets.js
+!/gh/slim-media.js
+!/gh/slim-media.json
+!/gh/lighthouse.js
+!/gh/lint-text.js
+!/gh/dates.json
+!/gh/verify7.js
+!/gh/verify-live.js
+
+# clip and screenshot recorder (the per-project scenarios name client sites, so they stay out)
+!/vid/
+/vid/*
+!/vid/recorder.js
+!/vid/run.js
+!/vid/stills.js
+!/vid/encode.js
+!/vid/strips.js
+!/vid/shot-sheets.js
+!/vid/peek.js
+
+# dates and tags
+!/meta/
+/meta/*
+!/meta/apply-tags.js
+!/meta/set-tags.js
+!/meta/tags-fixed.json
+!/meta/tag-aliases.json
+!/meta/apply-dates.js
+!/meta/dates.js
+!/meta/detect.js
+!/meta/compare.js
+!/meta/add-old-shots.js

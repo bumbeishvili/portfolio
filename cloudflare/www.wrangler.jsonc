@@ -1,0 +1,9 @@
+// The redirect from www.davidb.dev to davidb.dev (the site itself is ../wrangler.jsonc).
+//      npx wrangler deploy -c cloudflare/www.wrangler.jsonc
+{
+	"name": "davidb-dev-www",
+	"main": "www-redirect.js",
+	"compatibility_date": "2026-11-01",
+	// www already goes through Cloudflare, so a route is enough (see the note in ../wrangler.jsonc)
+	"routes": [{ "pattern": "www.davidb.dev/*", "zone_name": "davidb.dev" }]
+}

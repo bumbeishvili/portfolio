@@ -1,0 +1,26 @@
+// - - - - - - - - - - - - - - - - - -
+
+// Inline SVG icons
+// (the sizing rules Font Awesome used to inject at runtime)
+
+// - - - - - - - - - - - - - - - - - -
+
+svg:not(:root).svg-inline--fa {
+	overflow: visible;
+}
+
+.svg-inline--fa {
+	display: inline-block;
+	font-size: inherit;
+	height: 1em;
+	overflow: visible;
+	vertical-align: -0.125em;
+
+	&.fa-w-14 {
+		width: 0.875em;
+	}
+
+	&.fa-w-16 {
+		width: 1em;
+	}
+}

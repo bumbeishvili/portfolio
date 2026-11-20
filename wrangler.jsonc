@@ -1,0 +1,24 @@
+// Cloudflare: the built site (./build) is served as static files, the same way the other projects
+// are deployed.      npm run build && npx wrangler deploy
+{
+	"name": "davidb-dev",
+	"compatibility_date": "2026-11-01",
+	// The address. The domain's DNS already goes through Cloudflare, so a route is enough: every
+	// request for davidb.dev is answered here and never reaches the old host (GitHub Pages).
+	// Removing the route puts the old site back. The workers.dev address stays on as a second
+	// way in, for checking a deploy.
+	"routes": [{ "pattern": "davidb.dev/*", "zone_name": "davidb.dev" }],
+	"workers_dev": true,
+	// Only video files go through this script: it answers requests for a part of a video, which
+	// Safari needs and the static file serving does not do (see the comment in the script).
+	"main": "cloudflare/site.js",
+	"assets": {
+		"directory": "./build",
+		"binding": "ASSETS",
+		// /about is build/about.html, /all/ is build/all/index.html
+		"html_handling": "auto-trailing-slash",
+		// any other address gets build/404.html, with a 404 status
+		"not_found_handling": "404-page",
+		"run_worker_first": ["/*.mp4"]
+	}
+}

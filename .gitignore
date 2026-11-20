@@ -1,2 +1,35 @@
-_site/
-.jekyll-cache
+node_modules
+
+# Output
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Cloudflare (wrangler) working files
+.wrangler
+
+# Written before every build (tools/gh/hidden-assets.js)
+/static/.assetsignore
+
+# Source footage for clips. Not needed to run the site, and some file names carry client names.
+/_raw/
+
+# Hidden projects (hidden: true in the page). They are work that is not public yet, and this
+# repository is public, so their pages and media stay on this machine only. When one goes public,
+# remove its two lines here.
+/src/content/notable-collaborations/2011-11-01-harvard-workforce.md
+/static/images/projects/harvard-workforce/
+/src/content/more/2026-11-18-ageing-better-neter-data-hub.md
+/static/images/projects/ageing-better-neter-data-hub/

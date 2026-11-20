@@ -1,0 +1,694 @@
+{
+ "/images/projects/solar-lights-demo/thumbnail.mp4": {
+  "src": "/images/projects/solar-lights-demo/thumbnail.webp",
+  "width": 600,
+  "height": 474,
+  "small": "/images/projects/solar-lights-demo/thumbnail.small.mp4"
+ },
+ "/images/projects/stable-configurator/thumbnail.mp4": {
+  "src": "/images/projects/stable-configurator/thumbnail.webp",
+  "width": 600,
+  "height": 348,
+  "small": "/images/projects/stable-configurator/thumbnail.small.mp4"
+ },
+ "/images/projects/threejs-journey-particles-cursor-animation-39/thumbnail.mp4": {
+  "src": "/images/projects/threejs-journey-particles-cursor-animation-39/thumbnail.webp",
+  "width": 600,
+  "height": 598,
+  "small": "/images/projects/threejs-journey-particles-cursor-animation-39/thumbnail.small.mp4"
+ },
+ "/images/projects/rtf-glass-monkey/thumbnail.mp4": {
+  "src": "/images/projects/rtf-glass-monkey/thumbnail.webp",
+  "width": 800,
+  "height": 788,
+  "small": "/images/projects/rtf-glass-monkey/thumbnail.small.mp4"
+ },
+ "/images/projects/rtf-shoe-configurator/thumbnail.mp4": {
+  "src": "/images/projects/rtf-shoe-configurator/thumbnail.webp",
+  "width": 800,
+  "height": 528,
+  "small": "/images/projects/rtf-shoe-configurator/thumbnail.small.mp4"
+ },
+ "/images/projects/threejs-hologram/thumbnail.mp4": {
+  "src": "/images/projects/threejs-hologram/thumbnail.webp",
+  "width": 800,
+  "height": 525,
+  "small": "/images/projects/threejs-hologram/thumbnail.small.mp4"
+ },
+ "/images/projects/instanced-cube-animation/thumbnail.mp4": {
+  "src": "/images/projects/instanced-cube-animation/thumbnail.webp",
+  "width": 600,
+  "height": 424,
+  "small": "/images/projects/instanced-cube-animation/thumbnail.small.mp4"
+ },
+ "/images/projects/particles-globe/thumbnail.mp4": {
+  "src": "/images/projects/particles-globe/thumbnail.webp",
+  "width": 600,
+  "height": 350,
+  "small": "/images/projects/particles-globe/thumbnail.small.mp4"
+ },
+ "/images/projects/dubai-trips/thumbnail.mp4": {
+  "src": "/images/projects/dubai-trips/thumbnail.webp",
+  "width": 600,
+  "height": 330,
+  "small": "/images/projects/dubai-trips/thumbnail.small.mp4"
+ },
+ "/images/projects/clim-globe/thumbnail.mp4": {
+  "src": "/images/projects/clim-globe/thumbnail.webp",
+  "width": 600,
+  "height": 336,
+  "small": "/images/projects/clim-globe/thumbnail.small.mp4"
+ },
+ "/images/projects/population-map/thumbnail.mp4": {
+  "src": "/images/projects/population-map/thumbnail.webp",
+  "width": 700,
+  "height": 356,
+  "small": "/images/projects/population-map/thumbnail.small.mp4"
+ },
+ "/images/projects/x-wave/thumbnail.mp4": {
+  "src": "/images/projects/x-wave/thumbnail.webp",
+  "width": 600,
+  "height": 440,
+  "small": "/images/projects/x-wave/thumbnail.small.mp4"
+ },
+ "/images/projects/andromeda-globe/andr_globe_thumbnail.mp4": {
+  "src": "/images/projects/andromeda-globe/andr_globe_thumbnail.webp",
+  "width": 600,
+  "height": 514,
+  "small": "/images/projects/andromeda-globe/andr_globe_thumbnail.small.mp4"
+ },
+ "/images/projects/thunes-live-transactions/thumbnail.mp4": {
+  "src": "/images/projects/thunes-live-transactions/thumbnail.webp",
+  "width": 800,
+  "height": 494,
+  "small": "/images/projects/thunes-live-transactions/thumbnail.small.mp4"
+ },
+ "/images/projects/calendar-heatmap/thumbnail.mp4": {
+  "src": "/images/projects/calendar-heatmap/thumbnail.webp",
+  "width": 800,
+  "height": 458,
+  "small": "/images/projects/calendar-heatmap/thumbnail.small.mp4"
+ },
+ "/images/projects/risk-measured/thumbnail.webp": {
+  "src": "/images/projects/risk-measured/thumbnail.card.webp",
+  "width": 800,
+  "height": 529
+ },
+ "/images/projects/bog/thumbnail.mp4": {
+  "src": "/images/projects/bog/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/bog/thumbnail.small.mp4"
+ },
+ "/images/projects/diwo/5.webp": {
+  "src": "/images/projects/diwo/5.webp",
+  "width": 557,
+  "height": 742
+ },
+ "/images/projects/teamapps/thumbnail.webp": {
+  "src": "/images/projects/teamapps/thumbnail.webp",
+  "width": 796,
+  "height": 604
+ },
+ "/images/projects/learn-earn/thumbnail.webp": {
+  "src": "/images/projects/learn-earn/thumbnail.webp",
+  "width": 607,
+  "height": 402
+ },
+ "/images/projects/brain-health/thumbnail.webp": {
+  "src": "/images/projects/brain-health/thumbnail.webp",
+  "width": 664,
+  "height": 659
+ },
+ "/images/projects/radial-tree/thumbnail.webp": {
+  "src": "/images/projects/radial-tree/thumbnail.card.webp",
+  "width": 800,
+  "height": 455
+ },
+ "/images/projects/forecast-chart-widgets/thumbnail.webp": {
+  "src": "/images/projects/forecast-chart-widgets/thumbnail.card.webp",
+  "width": 800,
+  "height": 709
+ },
+ "/images/projects/georgian-budget-bubbles/thumbnail.mp4": {
+  "src": "/images/projects/georgian-budget-bubbles/thumbnail.webp",
+  "width": 800,
+  "height": 587,
+  "small": "/images/projects/georgian-budget-bubbles/thumbnail.small.mp4"
+ },
+ "/images/projects/oil-and-gas-charts/thumbnail.mp4": {
+  "src": "/images/projects/oil-and-gas-charts/thumbnail.webp",
+  "width": 800,
+  "height": 710,
+  "small": "/images/projects/oil-and-gas-charts/thumbnail.small.mp4"
+ },
+ "/images/projects/gauge-widgets/thumbnail.mp4": {
+  "src": "/images/projects/gauge-widgets/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/gauge-widgets/thumbnail.small.mp4"
+ },
+ "/images/projects/entrepreneurs-bubble-chart-and-us-income-map/thumbnail.mp4": {
+  "src": "/images/projects/entrepreneurs-bubble-chart-and-us-income-map/thumbnail.webp",
+  "width": 800,
+  "height": 826,
+  "small": "/images/projects/entrepreneurs-bubble-chart-and-us-income-map/thumbnail.small.mp4"
+ },
+ "/images/projects/stock-market-valuation-charts/thumbnail.mp4": {
+  "src": "/images/projects/stock-market-valuation-charts/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/stock-market-valuation-charts/thumbnail.small.mp4"
+ },
+ "/images/projects/line-chart-and-scheduling-timeline/thumbnail.mp4": {
+  "src": "/images/projects/line-chart-and-scheduling-timeline/thumbnail.webp",
+  "width": 800,
+  "height": 616,
+  "small": "/images/projects/line-chart-and-scheduling-timeline/thumbnail.small.mp4"
+ },
+ "/images/projects/network-timeline-sentiment-and-map/thumbnail.mp4": {
+  "src": "/images/projects/network-timeline-sentiment-and-map/thumbnail.webp",
+  "width": 800,
+  "height": 800,
+  "small": "/images/projects/network-timeline-sentiment-and-map/thumbnail.small.mp4"
+ },
+ "/images/projects/firing-map-and-collapsible-network/thumbnail.mp4": {
+  "src": "/images/projects/firing-map-and-collapsible-network/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/firing-map-and-collapsible-network/thumbnail.small.mp4"
+ },
+ "/images/projects/stoneridge/spline.png": {
+  "src": "/images/projects/stoneridge/spline.png",
+  "width": 510,
+  "height": 762
+ },
+ "/images/projects/api-management-mind-map/thumbnail.mp4": {
+  "src": "/images/projects/api-management-mind-map/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/api-management-mind-map/thumbnail.small.mp4"
+ },
+ "/images/projects/globe-with-cells-and-points/thumbnail.mp4": {
+  "src": "/images/projects/globe-with-cells-and-points/thumbnail.webp",
+  "width": 800,
+  "height": 803,
+  "small": "/images/projects/globe-with-cells-and-points/thumbnail.small.mp4"
+ },
+ "/images/projects/compliance-questionnaire-timeline/thumbnail.mp4": {
+  "src": "/images/projects/compliance-questionnaire-timeline/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/compliance-questionnaire-timeline/thumbnail.small.mp4"
+ },
+ "/images/projects/trade-chord-diagram/thumbnail.mp4": {
+  "src": "/images/projects/trade-chord-diagram/thumbnail.webp",
+  "width": 800,
+  "height": 659,
+  "small": "/images/projects/trade-chord-diagram/thumbnail.small.mp4"
+ },
+ "/images/projects/sales-dashboard-widgets/thumbnail.mp4": {
+  "src": "/images/projects/sales-dashboard-widgets/thumbnail.webp",
+  "width": 800,
+  "height": 552,
+  "small": "/images/projects/sales-dashboard-widgets/thumbnail.small.mp4"
+ },
+ "/images/projects/agriculture-charts/thumbnail.mp4": {
+  "src": "/images/projects/agriculture-charts/thumbnail.webp",
+  "width": 800,
+  "height": 493,
+  "small": "/images/projects/agriculture-charts/thumbnail.small.mp4"
+ },
+ "/images/projects/income-and-spending-flow/thumbnail.mp4": {
+  "src": "/images/projects/income-and-spending-flow/thumbnail.webp",
+  "width": 800,
+  "height": 531,
+  "small": "/images/projects/income-and-spending-flow/thumbnail.small.mp4"
+ },
+ "/images/projects/mind-map-with-search/thumbnail.mp4": {
+  "src": "/images/projects/mind-map-with-search/thumbnail.webp",
+  "width": 800,
+  "height": 763,
+  "small": "/images/projects/mind-map-with-search/thumbnail.small.mp4"
+ },
+ "/images/projects/hierarchical-timeline/thumbnail.mp4": {
+  "src": "/images/projects/hierarchical-timeline/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/hierarchical-timeline/thumbnail.small.mp4"
+ },
+ "/images/projects/property-supply-and-demand-dashboard/thumbnail.mp4": {
+  "src": "/images/projects/property-supply-and-demand-dashboard/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/property-supply-and-demand-dashboard/thumbnail.small.mp4"
+ },
+ "/images/projects/3d-scans-of-georgian-landmarks/thumbnail.mp4": {
+  "src": "/images/projects/3d-scans-of-georgian-landmarks/thumbnail.webp",
+  "width": 800,
+  "height": 542,
+  "small": "/images/projects/3d-scans-of-georgian-landmarks/thumbnail.small.mp4"
+ },
+ "/images/projects/minecraft-biome-map/thumbnail.mp4": {
+  "src": "/images/projects/minecraft-biome-map/thumbnail.webp",
+  "width": 800,
+  "height": 627,
+  "small": "/images/projects/minecraft-biome-map/thumbnail.small.mp4"
+ },
+ "/images/projects/material-flow-sankey/thumbnail.mp4": {
+  "src": "/images/projects/material-flow-sankey/thumbnail.webp",
+  "width": 800,
+  "height": 578,
+  "small": "/images/projects/material-flow-sankey/thumbnail.small.mp4"
+ },
+ "/images/projects/banks-and-stock-exchanges-globe/thumbnail.mp4": {
+  "src": "/images/projects/banks-and-stock-exchanges-globe/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/banks-and-stock-exchanges-globe/thumbnail.small.mp4"
+ },
+ "/images/projects/flight-simulator-globe/thumbnail.mp4": {
+  "src": "/images/projects/flight-simulator-globe/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/flight-simulator-globe/thumbnail.small.mp4"
+ },
+ "/images/projects/healthcare-organizations-dashboard/thumbnail.mp4": {
+  "src": "/images/projects/healthcare-organizations-dashboard/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/healthcare-organizations-dashboard/thumbnail.small.mp4"
+ },
+ "/images/projects/organization-circles-chart/thumbnail.mp4": {
+  "src": "/images/projects/organization-circles-chart/thumbnail.webp",
+  "width": 800,
+  "height": 563,
+  "small": "/images/projects/organization-circles-chart/thumbnail.small.mp4"
+ },
+ "/images/projects/etf-insider/thumbnail.mp4": {
+  "src": "/images/projects/etf-insider/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/etf-insider/thumbnail.small.mp4"
+ },
+ "/images/projects/compass-rose-chart/thumbnail.mp4": {
+  "src": "/images/projects/compass-rose-chart/thumbnail.webp",
+  "width": 800,
+  "height": 728,
+  "small": "/images/projects/compass-rose-chart/thumbnail.small.mp4"
+ },
+ "/images/projects/raging-sea-shading/thumbnail.mp4": {
+  "src": "/images/projects/raging-sea-shading/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/raging-sea-shading/thumbnail.small.mp4"
+ },
+ "/images/projects/net-zero-finance-tracker/thumbnail.mp4": {
+  "src": "/images/projects/net-zero-finance-tracker/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/net-zero-finance-tracker/thumbnail.small.mp4"
+ },
+ "/images/projects/public-development-bank-climate-portal/thumbnail.mp4": {
+  "src": "/images/projects/public-development-bank-climate-portal/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/public-development-bank-climate-portal/thumbnail.small.mp4"
+ },
+ "/images/projects/disk-configurator/thumbnail.mp4": {
+  "src": "/images/projects/disk-configurator/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/disk-configurator/thumbnail.small.mp4"
+ },
+ "/images/projects/food-trailer-designer/thumbnail.mp4": {
+  "src": "/images/projects/food-trailer-designer/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/food-trailer-designer/thumbnail.small.mp4"
+ },
+ "/images/projects/realtime-html-editor/thumbnail.mp4": {
+  "src": "/images/projects/realtime-html-editor/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/realtime-html-editor/thumbnail.small.mp4"
+ },
+ "/images/projects/comptia-hiring-data-tiles/thumbnail.mp4": {
+  "src": "/images/projects/comptia-hiring-data-tiles/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/comptia-hiring-data-tiles/thumbnail.small.mp4"
+ },
+ "/images/projects/invoicelet/thumbnail.mp4": {
+  "src": "/images/projects/invoicelet/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/invoicelet/thumbnail.small.mp4"
+ },
+ "/images/projects/gla-london-energy-charts/thumbnail.mp4": {
+  "src": "/images/projects/gla-london-energy-charts/thumbnail.webp",
+  "width": 800,
+  "height": 341,
+  "small": "/images/projects/gla-london-energy-charts/thumbnail.small.mp4"
+ },
+ "/images/projects/eui-open-internet/thumbnail.mp4": {
+  "src": "/images/projects/eui-open-internet/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/eui-open-internet/thumbnail.small.mp4"
+ },
+ "/images/projects/datacards/thumbnail.mp4": {
+  "src": "/images/projects/datacards/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/datacards/thumbnail.small.mp4"
+ },
+ "/images/projects/state-of-the-paper-ceiling/thumbnail.mp4": {
+  "src": "/images/projects/state-of-the-paper-ceiling/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/state-of-the-paper-ceiling/thumbnail.small.mp4"
+ },
+ "/images/projects/360-tour-generator/thumbnail.mp4": {
+  "src": "/images/projects/360-tour-generator/thumbnail.webp",
+  "width": 800,
+  "height": 512,
+  "small": "/images/projects/360-tour-generator/thumbnail.small.mp4"
+ },
+ "/images/projects/networthcast/thumbnail.mp4": {
+  "src": "/images/projects/networthcast/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/networthcast/thumbnail.small.mp4"
+ },
+ "/images/projects/connectusnow/thumbnail.mp4": {
+  "src": "/images/projects/connectusnow/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/connectusnow/thumbnail.small.mp4"
+ },
+ "/images/projects/occupations-map/thumbnail.mp4": {
+  "src": "/images/projects/occupations-map/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/occupations-map/thumbnail.small.mp4"
+ },
+ "/images/projects/green-diamond/thumbnail.mp4": {
+  "src": "/images/projects/green-diamond/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/green-diamond/thumbnail.small.mp4"
+ },
+ "/images/projects/genai-adoption-tracker/thumbnail.mp4": {
+  "src": "/images/projects/genai-adoption-tracker/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/genai-adoption-tracker/thumbnail.small.mp4"
+ },
+ "/images/projects/hdr-merger/thumbnail.mp4": {
+  "src": "/images/projects/hdr-merger/thumbnail.webp",
+  "width": 800,
+  "height": 526,
+  "small": "/images/projects/hdr-merger/thumbnail.small.mp4"
+ },
+ "/images/projects/data-table/thumbnail.mp4": {
+  "src": "/images/projects/data-table/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/data-table/thumbnail.small.mp4"
+ },
+ "/images/projects/hks-global-economic-transformation/thumbnail.mp4": {
+  "src": "/images/projects/hks-global-economic-transformation/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/hks-global-economic-transformation/thumbnail.small.mp4"
+ },
+ "/images/projects/yff-data-dashboard/thumbnail.mp4": {
+  "src": "/images/projects/yff-data-dashboard/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/yff-data-dashboard/thumbnail.small.mp4"
+ },
+ "/images/projects/the-new-american-frontier/thumbnail.mp4": {
+  "src": "/images/projects/the-new-american-frontier/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/the-new-american-frontier/thumbnail.small.mp4"
+ },
+ "/images/projects/fourone-insights/thumbnail.mp4": {
+  "src": "/images/projects/fourone-insights/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/fourone-insights/thumbnail.small.mp4"
+ },
+ "/images/projects/self-assembling-burger/thumbnail.mp4": {
+  "src": "/images/projects/self-assembling-burger/thumbnail.webp",
+  "width": 800,
+  "height": 422,
+  "small": "/images/projects/self-assembling-burger/thumbnail.small.mp4"
+ },
+ "/images/projects/camera-games/thumbnail.mp4": {
+  "src": "/images/projects/camera-games/thumbnail.webp",
+  "width": 720,
+  "height": 406,
+  "small": "/images/projects/camera-games/thumbnail.small.mp4"
+ },
+ "/images/projects/strategies-simulator/thumbnail.mp4": {
+  "src": "/images/projects/strategies-simulator/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/strategies-simulator/thumbnail.small.mp4"
+ },
+ "/images/projects/bupa-driving-claims/thumbnail.mp4": {
+  "src": "/images/projects/bupa-driving-claims/thumbnail.webp",
+  "width": 600,
+  "height": 456,
+  "small": "/images/projects/bupa-driving-claims/thumbnail.small.mp4"
+ },
+ "/images/projects/comptia-job-exploration/thumbnail.mp4": {
+  "src": "/images/projects/comptia-job-exploration/thumbnail.webp",
+  "width": 600,
+  "height": 394,
+  "small": "/images/projects/comptia-job-exploration/thumbnail.small.mp4"
+ },
+ "/images/projects/comptia-cyberseek/thumbnail.mp4": {
+  "src": "/images/projects/comptia-cyberseek/thumbnail.webp",
+  "width": 600,
+  "height": 402,
+  "small": "/images/projects/comptia-cyberseek/thumbnail.small.mp4"
+ },
+ "/images/projects/edelman-barometer-lines/thumbnail.mp4": {
+  "src": "/images/projects/edelman-barometer-lines/thumbnail.webp",
+  "width": 600,
+  "height": 392,
+  "small": "/images/projects/edelman-barometer-lines/thumbnail.small.mp4"
+ },
+ "/images/projects/mastercard-foundation/thumbnail.mp4": {
+  "src": "/images/projects/mastercard-foundation/thumbnail.webp",
+  "width": 600,
+  "height": 338,
+  "small": "/images/projects/mastercard-foundation/thumbnail.small.mp4"
+ },
+ "/images/projects/nestseekers/thumbnail.mp4": {
+  "src": "/images/projects/nestseekers/thumbnail.webp",
+  "width": 600,
+  "height": 368,
+  "small": "/images/projects/nestseekers/thumbnail.small.mp4"
+ },
+ "/images/projects/sequoia-org-chart/thumbnail.mp4": {
+  "src": "/images/projects/sequoia-org-chart/thumbnail.webp",
+  "width": 600,
+  "height": 322,
+  "small": "/images/projects/sequoia-org-chart/thumbnail.small.mp4"
+ },
+ "/images/projects/odi/thumbnail.mp4": {
+  "src": "/images/projects/odi/thumbnail.webp",
+  "width": 600,
+  "height": 546,
+  "small": "/images/projects/odi/thumbnail.small.mp4"
+ },
+ "/images/projects/sff/sff-thumbnaili.mp4": {
+  "src": "/images/projects/sff/sff-thumbnaili.webp",
+  "width": 700,
+  "height": 460,
+  "small": "/images/projects/sff/sff-thumbnaili.small.mp4"
+ },
+ "/images/projects/harvard-economy/thumbnail.mp4": {
+  "src": "/images/projects/harvard-economy/thumbnail.webp",
+  "width": 600,
+  "height": 392,
+  "small": "/images/projects/harvard-economy/thumbnail.small.mp4"
+ },
+ "/images/projects/public-servant/thumbnail.mp4": {
+  "src": "/images/projects/public-servant/thumbnail.webp",
+  "width": 600,
+  "height": 490,
+  "small": "/images/projects/public-servant/thumbnail.small.mp4"
+ },
+ "/images/talks/d3-talk.webp": {
+  "src": "/images/talks/d3-talk.card.webp",
+  "width": 800,
+  "height": 446
+ },
+ "/images/talks/observable.webp": {
+  "src": "/images/talks/observable.card.webp",
+  "width": 800,
+  "height": 450
+ },
+ "/images/achievements/win.jpg": {
+  "src": "/images/achievements/win.card.webp",
+  "width": 800,
+  "height": 533
+ },
+ "/images/tools/pension-calculator/thumbnail.mp4": {
+  "src": "/images/tools/pension-calculator/thumbnail.webp",
+  "width": 800,
+  "height": 550,
+  "small": "/images/tools/pension-calculator/thumbnail.small.mp4"
+ },
+ "/images/tools/palette-color-transfer.webp": {
+  "src": "/images/tools/palette-color-transfer.card.webp",
+  "width": 800,
+  "height": 491
+ },
+ "/images/tools/rewind.png": {
+  "src": "/images/tools/rewind.card.webp",
+  "width": 800,
+  "height": 549
+ },
+ "/images/tools/dropShadowPlayground.png": {
+  "src": "/images/tools/dropShadowPlayground.png",
+  "width": 685,
+  "height": 694
+ },
+ "/images/blogs/webbysff/feature.webp": {
+  "src": "/images/blogs/webbysff/feature.card.webp",
+  "width": 800,
+  "height": 745
+ },
+ "/images/blogs/upwork-meet-v1/feature.webp": {
+  "src": "/images/blogs/upwork-meet-v1/feature.card.webp",
+  "width": 800,
+  "height": 413
+ },
+ "/images/blogs/datafest-2022/workshop.jpg": {
+  "src": "/images/blogs/datafest-2022/workshop.card.webp",
+  "width": 800,
+  "height": 533
+ },
+ "/images/blogs/kiu-workshop/workshop.jpg": {
+  "src": "/images/blogs/kiu-workshop/workshop.card.webp",
+  "width": 800,
+  "height": 534
+ },
+ "/images/blogs/moxalise/feature.webp": {
+  "src": "/images/blogs/moxalise/feature.card.webp",
+  "width": 800,
+  "height": 449
+ },
+ "/images/blogs/devtherapy/thumbnail.jpg": {
+  "src": "/images/blogs/devtherapy/thumbnail.card.webp",
+  "width": 800,
+  "height": 450
+ },
+ "/images/blogs/mcp-hackathon/team.jpg": {
+  "src": "/images/blogs/mcp-hackathon/team.card.webp",
+  "width": 800,
+  "height": 600
+ },
+ "/images/blogs/hacktoberfest/stage.webp": {
+  "src": "/images/blogs/hacktoberfest/stage.card.webp",
+  "width": 800,
+  "height": 1000
+ },
+ "/images/projects/coronavirus/thumbnail.mp4": {
+  "src": "/images/projects/coronavirus/thumbnail.webp",
+  "width": 700,
+  "height": 398,
+  "small": "/images/projects/coronavirus/thumbnail.small.mp4"
+ },
+ "/images/projects/network-graph/thumbnail.mp4": {
+  "src": "/images/projects/network-graph/thumbnail.webp",
+  "width": 700,
+  "height": 392,
+  "small": "/images/projects/network-graph/thumbnail.small.mp4"
+ },
+ "/images/projects/andrew-globe/thumbnail.mp4": {
+  "src": "/images/projects/andrew-globe/thumbnail.webp",
+  "width": 600,
+  "height": 518,
+  "small": "/images/projects/andrew-globe/thumbnail.small.mp4"
+ },
+ "/images/projects/datastax/thumbnail.mp4": {
+  "src": "/images/projects/datastax/thumbnail.webp",
+  "width": 700,
+  "height": 604,
+  "small": "/images/projects/datastax/thumbnail.small.mp4"
+ },
+ "/images/projects/nautical-cloud/wind.mp4": {
+  "src": "/images/projects/nautical-cloud/wind.webp",
+  "width": 600,
+  "height": 440,
+  "small": "/images/projects/nautical-cloud/wind.small.mp4"
+ },
+ "/images/projects/leadership-connect/thumbnail.mp4": {
+  "src": "/images/projects/leadership-connect/thumbnail.webp",
+  "width": 700,
+  "height": 320,
+  "small": "/images/projects/leadership-connect/thumbnail.small.mp4"
+ },
+ "/images/ceros/thumbnail.mp4": {
+  "src": "/images/ceros/thumbnail.webp",
+  "width": 700,
+  "height": 342,
+  "small": "/images/ceros/thumbnail.small.mp4"
+ },
+ "/images/projects/justice-snapshot/thumbnail.mp4": {
+  "src": "/images/projects/justice-snapshot/thumbnail.webp",
+  "width": 700,
+  "height": 412,
+  "small": "/images/projects/justice-snapshot/thumbnail.small.mp4"
+ },
+ "/images/projects/class-diagram-builder/thumbnail.mp4": {
+  "src": "/images/projects/class-diagram-builder/thumbnail.webp",
+  "width": 600,
+  "height": 314,
+  "small": "/images/projects/class-diagram-builder/thumbnail.small.mp4"
+ },
+ "/images/projects/bbfaw/thumbnail.mp4": {
+  "src": "/images/projects/bbfaw/thumbnail.webp",
+  "width": 600,
+  "height": 414,
+  "small": "/images/projects/bbfaw/thumbnail.small.mp4"
+ },
+ "/images/projects/ple-emissions/ple_thumbnail.mp4": {
+  "src": "/images/projects/ple-emissions/ple_thumbnail.webp",
+  "width": 700,
+  "height": 532,
+  "small": "/images/projects/ple-emissions/ple_thumbnail.small.mp4"
+ },
+ "/images/projects/geohistory/thumbnail.mp4": {
+  "src": "/images/projects/geohistory/thumbnail.webp",
+  "width": 700,
+  "height": 572,
+  "small": "/images/projects/geohistory/thumbnail.small.mp4"
+ },
+ "/images/projects/climateai/climate_thumbnail.mp4": {
+  "src": "/images/projects/climateai/climate_thumbnail.webp",
+  "width": 600,
+  "height": 398,
+  "small": "/images/projects/climateai/climate_thumbnail.small.mp4"
+ },
+ "/images/projects/securelogic/thumbnail.mp4": {
+  "src": "/images/projects/securelogic/thumbnail.webp",
+  "width": 700,
+  "height": 424,
+  "small": "/images/projects/securelogic/thumbnail.small.mp4"
+ },
+ "/images/projects/org-chart/org_thumbnail.mp4": {
+  "src": "/images/projects/org-chart/org_thumbnail.webp",
+  "width": 700,
+  "height": 598,
+  "small": "/images/projects/org-chart/org_thumbnail.small.mp4"
+ }
+}

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tag editor</title>
+<style>
+	:root {
+		--bg: #f6f5f2; --panel: #fff; --ink: #1c1b19; --soft: #6b6862; --line: #e3e0d9; --chip: #efede8;
+		--accent: #2f5fd0; --added: #1c7c4a; --added-bg: #e4f4ea; --removed: #b3392f; --warn-bg: #fdecea;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root { --bg: #151514; --panel: #1f1f1d; --ink: #ecebe7; --soft: #a09d96; --line: #33322f; --chip: #2b2a27;
+			--accent: #8fb0ff; --added: #6fd39a; --added-bg: #183326; --removed: #ff8d82; --warn-bg: #3a1d1a; }
+	}
+	* { box-sizing: border-box; }
+	body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+	header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); padding: 12px 20px 10px; }
+	.bar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+	h1 { font-size: 17px; margin: 0; }
+	.count { color: var(--soft); }
+	.grow { flex: 1; }
+	#status { font-size: 13px; color: var(--soft); }
+	#status.bad { color: var(--removed); font-weight: 600; }
+	button, select, input { font: inherit; color: inherit; }
+	button, select, input[type=text], input[type=search] { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 5px 9px; }
+	button { cursor: pointer; }
+	button:hover { border-color: var(--accent); }
+	input[type=search] { width: 220px; }
+	label { color: var(--soft); display: inline-flex; align-items: center; gap: 6px; }
+	#cloud { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; max-height: 84px; overflow: auto; }
+	#cloud.open { max-height: none; }
+	.chip { display: inline-flex; align-items: center; gap: 5px; background: var(--chip); border: 1px solid transparent; border-radius: 999px; padding: 2px 9px; white-space: nowrap; }
+	#cloud .chip { cursor: pointer; font-size: 13px; }
+	#cloud .chip small { color: var(--soft); }
+	#cloud .chip.on { background: var(--accent); color: #fff; }
+	#cloud .chip.on small { color: #fff; }
+	#cloud .chip.new { border-color: var(--added); }
+	main { padding: 6px 20px 80px; max-width: 1500px; margin: 0 auto; }
+	h2 { font-size: 22px; margin: 26px 0 8px; display: flex; align-items: center; gap: 14px; }
+	h2::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+	.row { display: grid; grid-template-columns: 150px minmax(200px, 330px) 1fr; gap: 14px; align-items: start; background: var(--panel); border: 1px solid var(--line); border-left: 4px solid transparent; border-radius: 8px; padding: 10px; margin-bottom: 8px; }
+	.row.changed { border-left-color: var(--added); }
+	.thumb { width: 150px; height: 94px; border-radius: 5px; overflow: hidden; background: var(--chip); display: block; }
+	.thumb img, .thumb video { width: 100%; height: 100%; object-fit: cover; display: block; }
+	.title { font-weight: 600; }
+	.meta { color: var(--soft); font-size: 12.5px; margin-top: 2px; }
+	.meta a { color: var(--accent); text-decoration: none; }
+	.meta a:hover { text-decoration: underline; }
+	.desc { color: var(--soft); font-size: 12.5px; margin-top: 5px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+	.tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+	.tags .chip button { border: 0; background: none; padding: 0 1px; color: var(--soft); line-height: 1; font-size: 15px; }
+	.tags .chip button:hover { color: var(--removed); }
+	.chip.added { background: var(--added-bg); border-color: var(--added); }
+	.chip.removed { background: none; border: 1px dashed var(--line); color: var(--soft); text-decoration: line-through; }
+	.chip.removed button { text-decoration: none; }
+	.chip.removed button:hover { color: var(--added); }
+	.add { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; align-items: center; }
+	.add select { max-width: 190px; }
+	.add input { width: 150px; }
+	.quick { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+	.quick.has { background: var(--accent); color: #fff; }
+	.reset { border: 0; background: none; color: var(--soft); text-decoration: underline; padding: 0; }
+	#empty { color: var(--soft); padding: 40px 0; text-align: center; }
+	@media (max-width: 800px) { .row { grid-template-columns: 110px 1fr; } .row > .edit { grid-column: 1 / -1; } .thumb { width: 110px; height: 69px; } }
+</style>
+</head>
+<body>
+<header>
+	<div class="bar">
+		<h1>Tag editor</h1>
+		<span class="count" id="count"></span>
+		<span class="grow"></span>
+		<span id="status">Loading</span>
+		<button id="copy" title="Copies every project with its tags">Copy full list</button>
+		<button id="discard" title="Goes back to the tags that are on the site now">Discard my edits</button>
+	</div>
+	<div class="bar" style="margin-top:10px">
+		<input type="search" id="search" placeholder="Search title or tag">
+		<label>Show
+			<select id="show">
+				<option value="all">all projects</option>
+				<option value="changed">changed only</option>
+				<option value="few">with 3 tags or fewer</option>
+			</select>
+		</label>
+		<label title="Pick a tag here to switch it on or off with one click on each project">Quick tag
+			<select id="quick"></select>
+		</label>
+		<span class="grow"></span>
+		<span class="count" id="filterNote"></span>
+		<button id="more">Show all tags</button>
+	</div>
+	<div id="cloud"></div>
+</header>
+<main id="list"></main>
+<datalist id="alltags"></datalist>
+
+<script>
+const site = 'http://localhost:3002';
+let projects = [];            // from the content files
+const base = {};              // slug -> tags on the site now
+const current = {};           // slug -> tags after edits
+let filterTag = null, filterWithout = false, quickTag = '';
+const $ = (id) => document.getElementById(id);
+const el = (tag, props = {}, ...kids) => { const n = Object.assign(document.createElement(tag), props); for (const k of kids) if (k != null) n.append(k); return n; };
+let aliases = {};            // a second spelling of an existing tag -> that tag
+const norm = (t) => { const tag = String(t).toLowerCase().replace(/[\[\],"']/g, '').replace(/\s+/g, ' ').trim(); return aliases[tag] || tag; };
+const same = (a, b) => a.length === b.length && a.every((t, i) => t === b[i]);
+const changed = (slug) => !same(base[slug], current[slug]);
+
+function counts() {
+	const c = {};
+	for (const p of projects) for (const t of current[p.slug]) c[t] = (c[t] || 0) + 1;
+	for (const p of projects) for (const t of base[p.slug]) c[t] = c[t] || 0; // a tag removed everywhere stays on offer
+	return c;
+}
+const baseTags = () => new Set(projects.flatMap((p) => base[p.slug]));
+
+// ---- saving: every edit goes to the file next to this page
+let timer = null;
+function save() {
+	try { localStorage.setItem('tag-editor-backup', JSON.stringify(current)); } catch {}
+	$('status').className = ''; $('status').textContent = 'Saving';
+	clearTimeout(timer);
+	timer = setTimeout(async () => {
+		try {
+			const r = await (await fetch('/api/save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ tags: current }) })).json();
+			if (!r.ok) throw new Error(r.error);
+			$('status').textContent = 'Saved ' + new Date(r.savedAt).toLocaleTimeString();
+		} catch (e) { $('status').className = 'bad'; $('status').textContent = 'Not saved, the editor server is not answering. Use Copy full list.'; }
+	}, 350);
+}
+
+// ---- edits
+function setTags(slug, tags) { current[slug] = tags; save(); renderRow(slug); renderTop(); }
+function add(slug, tag) {
+	tag = norm(tag);
+	if (!tag || current[slug].includes(tag)) return;
+	// a tag put back goes to its old place, a new one to the end
+	const at = base[slug].indexOf(tag);
+	const next = [...current[slug]];
+	if (at < 0) next.push(tag);
+	else { const before = base[slug].slice(0, at).filter((t) => next.includes(t)); next.splice(before.length ? next.indexOf(before[before.length - 1]) + 1 : 0, 0, tag); }
+	setTags(slug, next);
+}
+const remove = (slug, tag) => setTags(slug, current[slug].filter((t) => t !== tag));
+
+// ---- top: counts, tag cloud, dropdowns
+function renderTop() {
+	const c = counts(), names = Object.keys(c).sort((a, b) => c[b] - c[a] || a.localeCompare(b)), was = baseTags();
+	const nChanged = projects.filter((p) => changed(p.slug)).length;
+	$('count').textContent = `${projects.length} projects, ${names.filter((t) => c[t]).length} tags, ${nChanged} changed`;
+	$('cloud').replaceChildren(...names.map((t) => {
+		const chip = el('span', { className: 'chip' + (t === filterTag ? ' on' : '') + (was.has(t) ? '' : ' new'), title: 'Click: projects with this tag. Alt-click: projects without it.' }, t, el('small', {}, String(c[t])));
+		chip.onclick = (e) => { const without = e.altKey; if (filterTag === t && filterWithout === without) filterTag = null; else { filterTag = t; filterWithout = without; } renderTop(); renderList(); };
+		return chip;
+	}));
+	$('filterNote').textContent = filterTag ? `${filterWithout ? 'without' : 'with'} "${filterTag}"` : '';
+	const alpha = Object.keys(c).sort();
+	$('alltags').replaceChildren(...alpha.map((t) => el('option', { value: t })));
+	const q = $('quick');
+	q.replaceChildren(el('option', { value: '' }, 'off'), ...alpha.map((t) => el('option', { value: t }, t)), el('option', { value: '+new' }, 'a new tag…'));
+	q.value = alpha.includes(quickTag) ? quickTag : '';
+}
+
+// ---- one project
+const inView = new IntersectionObserver((entries) => { for (const e of entries) { if (e.isIntersecting) e.target.play().catch(() => {}); else e.target.pause(); } }, { rootMargin: '100px' });
+function rowContent(p) {
+	const slug = p.slug, tags = current[slug], c = counts();
+	const src = (p.image.startsWith('/') ? '' : '/') + p.image;
+	let media;
+	if (/\.mp4$/i.test(p.image)) {
+		media = el('video', { muted: true, loop: true, playsInline: true, preload: 'none', src });
+		if (p.poster) media.poster = (p.poster.startsWith('/') ? '' : '/') + p.poster;
+		inView.observe(media); // plays while it is on the screen, like the cards on the site
+	} else media = el('img', { loading: 'lazy', src, alt: '' });
+	const page = `${site}/project/${slug}`;
+	const info = el('div', {},
+		el('div', { className: 'title' }, p.title),
+		el('div', { className: 'meta' }, `${p.year} · ${p.collection} · `, p.hidden ? 'hidden from the site' : el('a', { href: page, target: '_blank', rel: 'noopener' }, 'open page')),
+		el('div', { className: 'desc', title: p.description }, p.description));
+	const chips = el('div', { className: 'tags' });
+	for (const t of tags) chips.append(el('span', { className: 'chip' + (base[slug].includes(t) ? '' : ' added') }, t, el('button', { title: 'Remove', onclick: () => remove(slug, t) }, '×')));
+	for (const t of base[slug]) if (!tags.includes(t)) chips.append(el('span', { className: 'chip removed' }, t, el('button', { title: 'Put back', onclick: () => add(slug, t) }, '↺')));
+	const select = el('select', {}, el('option', { value: '' }, '+ add tag'), ...Object.keys(c).sort().filter((t) => !tags.includes(t)).map((t) => el('option', { value: t }, `${t} (${c[t]})`)));
+	select.onchange = () => { if (select.value) add(slug, select.value); };
+	const input = el('input', { type: 'text', placeholder: 'new tag, Enter' });
+	input.setAttribute('list', 'alltags');
+	input.onkeydown = (e) => { if (e.key === 'Enter' && norm(input.value)) { add(slug, input.value); const again = document.querySelector(`[data-slug="${CSS.escape(slug)}"] .add input`); if (again) again.focus(); } };
+	const tools = el('div', { className: 'add' }, select, input);
+	if (quickTag) {
+		const has = tags.includes(quickTag);
+		tools.prepend(el('button', { className: 'quick' + (has ? ' has' : ''), onclick: () => (has ? remove(slug, quickTag) : add(slug, quickTag)) }, (has ? '✓ ' : '+ ') + quickTag));
+	}
+	if (changed(slug)) tools.append(el('button', { className: 'reset', onclick: () => setTags(slug, [...base[slug]]) }, 'reset'));
+	return [el('a', { className: 'thumb', href: page, target: '_blank', rel: 'noopener' }, media), info, el('div', { className: 'edit' }, chips, tools)];
+}
+function renderRow(slug) {
+	const row = document.querySelector(`[data-slug="${CSS.escape(slug)}"]`);
+	if (!row) return;
+	row.className = 'row' + (changed(slug) ? ' changed' : '');
+	row.querySelectorAll('video').forEach((v) => inView.unobserve(v));
+	row.replaceChildren(...rowContent(projects.find((p) => p.slug === slug)));
+}
+
+// ---- the list, under the filters
+function visible(p) {
+	const q = $('search').value.trim().toLowerCase(), show = $('show').value, tags = current[p.slug];
+	if (q && !(p.title + ' ' + p.slug + ' ' + tags.join(' ')).toLowerCase().includes(q)) return false;
+	if (show === 'changed' && !changed(p.slug)) return false;
+	if (show === 'few' && tags.length > 3) return false;
+	if (filterTag && tags.includes(filterTag) === filterWithout) return false;
+	return true;
+}
+function renderList() {
+	const list = $('list'), shown = projects.filter(visible);
+	inView.disconnect();
+	list.replaceChildren();
+	let year = null;
+	for (const p of shown) {
+		if (p.year !== year) { year = p.year; list.append(el('h2', {}, String(year || 'No year'))); }
+		const row = el('div', { className: 'row' + (changed(p.slug) ? ' changed' : '') }, ...rowContent(p));
+		row.dataset.slug = p.slug;
+		list.append(row);
+	}
+	if (!shown.length) list.append(el('div', { id: 'empty' }, 'No project matches.'));
+}
+
+// ---- controls
+$('search').oninput = renderList;
+$('show').onchange = renderList;
+$('more').onclick = () => { const open = $('cloud').classList.toggle('open'); $('more').textContent = open ? 'Fewer tags' : 'Show all tags'; };
+$('quick').onchange = () => {
+	let v = $('quick').value;
+	if (v === '+new') v = norm(prompt('New tag') || '');
+	quickTag = v;
+	if (v && !(v in counts())) { const o = el('option', { value: v }, v); $('quick').insertBefore(o, $('quick').lastChild); }
+	$('quick').value = v;
+	renderList();
+};
+$('copy').onclick = async () => {
+	const text = JSON.stringify(Object.fromEntries(projects.map((p) => [p.slug, current[p.slug]])), null, 1);
+	try { await navigator.clipboard.writeText(text); } catch { const t = el('textarea', { value: text }); document.body.append(t); t.select(); document.execCommand('copy'); t.remove(); }
+	$('copy').textContent = 'Copied'; setTimeout(() => ($('copy').textContent = 'Copy full list'), 1500);
+};
+$('discard').onclick = async () => {
+	if (!confirm('Go back to the tags that are on the site now? Your edits in this editor are dropped.')) return;
+	for (const p of projects) current[p.slug] = [...base[p.slug]];
+	clearTimeout(timer);
+	try { await fetch('/api/discard', { method: 'POST' }); localStorage.removeItem('tag-editor-backup'); } catch {}
+	$('status').className = ''; $('status').textContent = 'Edits dropped';
+	renderTop(); renderList();
+};
+
+// ---- the site can change while this tab is open (a list applied, a tag added in chat, two pages merged):
+// when the tab is looked at again it takes those changes in and keeps the edits made here
+async function refresh() {
+	let data;
+	try { data = await (await fetch('/api/projects?seen')).json(); } catch { return; }
+	aliases = data.aliases || {};
+	let touched = false;
+	const known = new Set(data.projects.map((p) => p.slug));
+	for (const slug of Object.keys(base)) if (!known.has(slug)) { delete base[slug]; delete current[slug]; touched = true; }
+	for (const p of data.projects) {
+		const old = base[p.slug];
+		if (!old) { base[p.slug] = p.tags; current[p.slug] = [...p.tags]; touched = true; continue; }
+		const spelled = [...new Set(current[p.slug].map(norm))];
+		if (!same(spelled, current[p.slug])) { current[p.slug] = spelled; touched = true; }
+		if (same(old, p.tags)) continue;
+		const added = p.tags.filter((t) => !old.includes(t)), removed = old.filter((t) => !p.tags.includes(t));
+		const mine = current[p.slug].filter((t) => !removed.includes(t));
+		current[p.slug] = same(old, current[p.slug]) ? [...p.tags] : [...mine, ...added.filter((t) => !mine.includes(t))];
+		base[p.slug] = p.tags;
+		touched = true;
+	}
+	projects = data.projects;
+	if (touched) { renderTop(); renderList(); save(); }
+}
+addEventListener('focus', refresh);
+document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+
+// ---- start
+(async () => {
+	const data = await (await fetch('/api/projects?seen')).json();
+	projects = data.projects;
+	aliases = data.aliases || {};
+	for (const p of projects) { base[p.slug] = p.tags; current[p.slug] = Array.isArray(data.edited?.tags?.[p.slug]) ? [...new Set(data.edited.tags[p.slug].map(norm))] : [...p.tags]; }
+	$('status').textContent = data.edited ? `Edits loaded, saved ${new Date(data.edited.savedAt).toLocaleString()}` : `Edits are saved to ${data.file}`;
+	renderTop(); renderList();
+})().catch((e) => { $('status').className = 'bad'; $('status').textContent = 'Could not load the projects: ' + e.message; });
+</script>
+</body>
+</html>

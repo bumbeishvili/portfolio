@@ -1,0 +1,31 @@
+// Global stylesheet. Ported 1:1 from the Jekyll theme (old/_sass and old/css/style.scss),
+// so the order of these partials matters.
+
+// - - - - - - - - - - Foundations
+
+@use 'fonts';
+@use 'icons';
+@use 'reset';
+@use 'plugins';
+
+// - - - - - - - - - - Global styles
+
+@use 'basic';
+
+@use 'includes/header';
+@use 'includes/footer';
+
+@use 'includes/content';
+@use 'includes/socials';
+@use 'includes/gallery';
+@use 'includes/syntax';
+@use 'includes/contact-form';
+
+// - - - - - - - - - - Section styles
+
+@use 'includes/portfolio';
+@use 'includes/blog';
+
+// - - - - - - - - - - Overrides, timeline, fullscreen mode, card styling
+
+@use 'overrides';

@@ -1,0 +1,13 @@
+# Cloudflare: the files under /_app/immutable/ have a hash in their name and never change,
+# so browsers may keep them for a year.
+/_app/immutable/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# The fonts never change either.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Pictures and clips: a week. A returning visitor does not fetch them again, and a replaced
+# picture still shows up within days.
+/images/*
+  Cache-Control: public, max-age=604800
