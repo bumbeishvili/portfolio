@@ -153,7 +153,12 @@ When a description is missing or only a word or two, the first sentence of the p
 
 ## Deploying
 
-The site is served by Cloudflare as static files:
+The site is served by Cloudflare as static files. The repository is connected to the Worker
+`davidb-dev` in the Cloudflare dashboard (Workers & Pages, the Worker, Settings, Builds), so a push
+to `main` builds the site with `npm run build` and publishes it with `npx wrangler deploy`.
+`.nvmrc` sets the Node version for that build.
+
+To publish by hand instead:
 
 ```
 npm run build
@@ -163,10 +168,6 @@ npx wrangler deploy        # needs `npx wrangler login` once
 `wrangler.jsonc` sends every request for davidb.dev to the published files, and `cloudflare/site.js`
 answers requests for a part of a video, which Safari needs. Cloudflare takes no file over 25 MB.
 More in [tools/README.md](tools/README.md), under Publishing.
-
-[.github/workflows/deploy.yml](.github/workflows/deploy.yml) can still publish `build/` to GitHub Pages
-on a push to the `gh-pages` branch, if the repository's Pages source is set to GitHub Actions. It is not
-used while the site is on Cloudflare.
 
 ## Notes
 
