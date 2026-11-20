@@ -11,3 +11,9 @@
 # picture still shows up within days.
 /images/*
   Cache-Control: public, max-age=604800
+
+# The text files for AI tools say which encoding they are in, so a browser shows them correctly.
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8

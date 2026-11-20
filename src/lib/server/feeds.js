@@ -110,14 +110,42 @@ export function projectsJson() {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - llms.txt
 
+/**
+ * The two text files use plain keyboard characters only: no curly quotes, long dashes, bullets,
+ * check marks or degree signs. They are read as raw text, by programs and by people in a browser
+ * tab, and such characters turn into garbage whenever the reader guesses the encoding wrong.
+ * (The pages themselves keep their typography.) Letters of other alphabets are left as they are.
+ */
+const plain = (text) =>
+	text
+		.replace(/[\u2018\u2019\u201A\u2032]/g, "'")
+		.replace(/[\u201C\u201D\u201E\u2033]/g, '"')
+		.replace(/[ \t]*\u2014[ \t]*/g, ' - ') // long dash
+		.replace(/\u2013/g, '-') // short dash
+		.replace(/\u2026/g, '...')
+		.replace(/\u00A0/g, ' ')
+		.replace(/[ \t]*\u00B7[ \t]*/g, ', ') // middle dot between links
+		.replace(/[\u2022\u25CF\u25E6\u2713\u2714\u2192\u00B0]/g, '') // bullets, check marks, arrows, degree sign
+		.replace(/\u00D7/g, 'x')
+		.replace(/[ \t]+$/gm, '')
+		.replace(/(\S) {2,}/g, '$1 '); // (the indent at the start of a line stays)
+
 export function llmsIndex() {
+	// The layout is the one the llms.txt proposal (llmstxt.org) describes, so that its parsers can
+	// read the file: a title, a one-line summary in a blockquote, free text, then sections whose
+	// every line is "- [name](address): notes". "Optional" is the proposal's name for the section
+	// a reader may skip.
 	const projects = projectDocuments();
 	const about = documents().find((doc) => doc.url === '/about');
 
-	const line = (doc, title = doc.year ? `${doc.title} (${doc.year})` : doc.title) => {
+	// one entry on one line: the year, what it is, its tags
+	const line = (doc, when = doc.year) => {
 		const labels = doc.tags?.length ? `Tags: ${doc.tags.join(', ')}.` : technologies(doc).length ? `Tech: ${technologies(doc).join(', ')}.` : '';
-		const details = [summary(doc), labels].filter(Boolean).join(' ');
-		return `- [${title}](${absolute(doc.url)})${details ? `: ${details}` : ''}`;
+		const what = summary(doc);
+		const notes = [when && `${when}.`, what && (/[.!?]$/.test(what) ? what : what + '.'), labels].filter(Boolean).join(' ');
+		// a "]" in a title would end the link early
+		const name = doc.title.trim().replace(/[\[\]]/g, '');
+		return `- [${name}](${absolute(doc.url)})${notes ? `: ${notes}` : ''}`;
 	};
 	const section = (title, lines) => (lines.length ? `## ${title}\n\n${lines.join('\n')}\n` : '');
 
@@ -125,32 +153,40 @@ export function llmsIndex() {
 	const rest = projects.filter((project) => !project.featured);
 	const of = (collection) => rest.filter((project) => project.collection === collection).map((doc) => line(doc));
 
-	return [
-		`# ${site.title}\n`,
-		`> ${site.description} This is my portfolio, at ${site.url}.\n`,
-		about ? `${summary(about)}\n` : '',
-		section('About and contact', [
-			`- [About](${absolute('/about')}): who I am and how to reach me`,
-			`- Email: ${site.email}`,
-			...socials.map((social) => `- [${social.title}](${social.url})`)
-		]),
-		section(
-			'Technologies',
-			expertise(projects).map(({ technology, projects: count }) => `- ${technology}: ${count} ${count === 1 ? 'project' : 'projects'}`)
-		),
-		section('Selected work', selected.map((doc) => line(doc))),
-		section('Notable collaborations', of('notable-collaborations')),
-		section('2D projects', [...of('projects'), ...of('posts')]),
-		section('3D projects', of('gl')),
-		section('More projects', of('more')),
-		section(
-			'Blog',
-			posts().map((post) => line(post, `${post.title} (${post.date})`))
-		),
-		`## Optional\n\n- [Full text of every page](${absolute('/llms-full.txt')})\n- [Projects as JSON](${absolute('/projects.json')})\n- [Projects RSS feed](${absolute('/projects.xml')})\n- [Blog RSS feed](${absolute('/feed.xml')})\n- [Sitemap](${absolute('/sitemap.xml')})\n`
-	]
-		.filter(Boolean)
-		.join('\n');
+	return plain(
+		[
+			`# ${site.title}\n`,
+			`> ${site.description}\n`,
+			`This is my portfolio, at ${site.url}. Contact: ${site.email}\n`,
+			about ? `${summary(about)}\n` : '',
+			// free text before the sections may hold a list, which is where the plain facts go
+			`Technologies, by number of projects:\n\n${expertise(projects)
+				.map(({ technology, projects: count }) => `- ${technology}: ${count}`)
+				.join('\n')}\n`,
+			section('About', [
+				`- [About](${absolute('/about')}): who I am and how to reach me`,
+				...socials.map((social) => `- [${social.title}](${social.url})`)
+			]),
+			section('Selected work', selected.map((doc) => line(doc))),
+			section('Notable collaborations', of('notable-collaborations')),
+			section('2D projects', [...of('projects'), ...of('posts')]),
+			section('3D projects', of('gl')),
+			section('More projects', of('more')),
+			section(
+				'Blog',
+				posts().map((post) => line(post, post.date))
+			),
+			section('Optional', [
+				`- [Full text of every page](${absolute('/llms-full.txt')})`,
+				`- [Projects as JSON](${absolute('/projects.json')})`,
+				`- [Projects RSS feed](${absolute('/projects.xml')})`,
+				`- [Blog RSS feed](${absolute('/feed.xml')})`,
+				`- [Sitemap](${absolute('/sitemap.xml')})`
+			])
+		]
+			.filter(Boolean)
+			.join('\n')
+	);
 }
 
 export function llmsFull() {
@@ -174,9 +210,9 @@ export function llmsFull() {
 			.join('\n')
 			.trim();
 
-	return (
+	return plain(
 		[
-			`# ${site.title}\n\n> ${site.tagline}\n\nEvery page of ${site.url} as plain text. Contact: ${site.email}`,
+			`# ${site.title}\n\n${site.description}\n\nEvery page of ${site.url} as plain text. Contact: ${site.email}`,
 			about && entry(about, 'About page'),
 			...projects.map((doc) => entry(doc, kinds[doc.collection])),
 			...otherPosts.map((doc) => entry(doc, kinds[doc.collection]))
