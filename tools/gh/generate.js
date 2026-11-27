@@ -130,4 +130,7 @@ const yaml = (value) => JSON.stringify(value);
 	}
 	const bytes = entries.reduce((sum, e) => sum + fs.readdirSync(path.join(site, 'static/images/projects', e.slug)).reduce((s, f) => s + fs.statSync(path.join(site, 'static/images/projects', e.slug, f)).size, 0), 0);
 	console.log(`${entries.length} projects written, ${clips} with a clip, ${(bytes / 1e6).toFixed(1)} MB of images and video`);
+	// Writing a page empties its picture folder, which also removes the still and the phone-size clip
+	// its card shows (made by posters.js). They are made again here, so the cards are never left without.
+	require('child_process').execFileSync(process.execPath, [path.join(__dirname, 'posters.js')], { stdio: 'inherit' });
 })();

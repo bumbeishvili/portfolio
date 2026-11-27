@@ -13,6 +13,17 @@ const statics = path.join(site, 'static');
 const postersFile = path.join(site, 'src/lib/server/posters.json');
 const posters = fs.existsSync(postersFile) ? JSON.parse(fs.readFileSync(postersFile, 'utf8')) : {};
 
+// Every card picture the site will ask for must exist. A missing one would show as a broken image
+// on the cards, so the build stops here instead (the fix is to run tools/gh/posters.js).
+const missing = Object.values(posters)
+	.flatMap((poster) => [poster.src, poster.small])
+	.filter((address) => address && !fs.existsSync(path.join(statics, address)));
+if (missing.length) {
+	console.error(`${missing.length} card pictures are missing, for example ${missing.slice(0, 3).join(', ')}.`);
+	console.error('Run `node tools/gh/posters.js` (in tools/, after npm install) and build again.');
+	process.exit(1);
+}
+
 const hidden = [], visible = [];
 for (const collection of fs.readdirSync(content)) {
 	const dir = path.join(content, collection);
