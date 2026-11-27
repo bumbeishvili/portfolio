@@ -31,5 +31,3 @@ vite.config.ts.timestamp-*
 # remove its two lines here.
 /src/content/notable-collaborations/2011-11-01-harvard-workforce.md
 /static/images/projects/harvard-workforce/
-/src/content/more/2026-11-18-ageing-better-neter-data-hub.md
-/static/images/projects/ageing-better-neter-data-hub/

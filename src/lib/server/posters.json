@@ -459,6 +459,12 @@
   "height": 501,
   "small": "/images/projects/strategies-simulator/thumbnail.small.mp4"
  },
+ "/images/projects/ageing-better-neter-data-hub/thumbnail.mp4": {
+  "src": "/images/projects/ageing-better-neter-data-hub/thumbnail.webp",
+  "width": 800,
+  "height": 501,
+  "small": "/images/projects/ageing-better-neter-data-hub/thumbnail.small.mp4"
+ },
  "/images/projects/bupa-driving-claims/thumbnail.mp4": {
   "src": "/images/projects/bupa-driving-claims/thumbnail.webp",
   "width": 600,
