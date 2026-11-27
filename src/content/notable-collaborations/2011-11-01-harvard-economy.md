@@ -2,7 +2,7 @@
 layout: post
 title: "Harvard - Economy"
 year: 2026
-tags: [d3.js, dashboard, chart, svelte, website, data visualization, accessibility, python, map, tableau, cms, node.js, data, data analysis, data wrangling, aws, figma]
+tags: [d3.js, dashboard, chart, svelte, website, data visualization, accessibility, python, map, tableau, cms, node.js, data, data analysis, data wrangling, aws, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Dashboards for local economy and policy data across 700+ U.S. commuting zones."
 featured_image: "/images/projects/harvard-economy/thumbnail.mp4"

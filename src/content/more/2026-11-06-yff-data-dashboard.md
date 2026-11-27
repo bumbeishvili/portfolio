@@ -1,7 +1,7 @@
 ---
 title: "Youth Futures Foundation - Data Dashboard"
 year: 2026
-tags: [d3.js, svelte, node.js, dashboard, chart, map, typescript, tailwind, python, cms, api integration, full-stack, website, workforce, accessibility, data visualization, data pipeline, analytics, hex map, performance, azure, figma]
+tags: [d3.js, svelte, node.js, dashboard, chart, map, typescript, tailwind, python, cms, api integration, full-stack, website, workforce, accessibility, data visualization, data pipeline, analytics, hex map, performance, azure, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Dashboards on youth employment in the UK for Youth Futures Foundation, built with SvelteKit and d3.js."
 featured_image: '/images/projects/yff-data-dashboard/thumbnail.mp4'

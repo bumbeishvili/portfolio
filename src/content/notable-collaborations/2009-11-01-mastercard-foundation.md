@@ -2,7 +2,7 @@
 layout: post
 title: "Mastercard Foundation"
 year: 2026
-tags: [d3.js, map, dashboard, ai, data visualization, data analysis, analytics, azure, auth, figma]
+tags: [d3.js, map, dashboard, ai, data visualization, data analysis, analytics, azure, auth, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Dashboard developed for Mastercard Foundation, in partnership with Infogr8."
 featured_image: "/images/projects/mastercard-foundation/thumbnail.mp4"

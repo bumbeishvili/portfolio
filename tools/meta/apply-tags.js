@@ -10,6 +10,11 @@ const withData = (tags) => (tags.some((t) => dataTags.includes(t)) && !tags.incl
 const aliases = JSON.parse(fs.readFileSync(path.join(__dirname, 'tag-aliases.json'), 'utf8'));
 const spelled = (list) => [...new Set(list.map((t) => aliases[t] || t))];
 const union = (a, b) => spelled([...a, ...b.filter((t) => !a.includes(t))]);
+// Work done at infogr8 is tagged "infogr8", so it can be listed on its own (/all/infogr8/). A page counts
+// as such when it says it was made in partnership with infogr8, or as a Friday experiment there.
+// (The user asked for this on 2026-11-27. It applies to lists set in the tag editor too.)
+const madeWithInfogr8 = (text) => /partnership with[^\n]{0,12}infogr8|Friday experiment at[^\n]{0,4}infogr8/i.test(text.split(/^---$/m).slice(2).join('---'));
+const withInfogr8 = (tags, text) => (madeWithInfogr8(text) && !tags.includes('infogr8') ? [...tags, 'infogr8'] : tags);
 // a list set by hand in the tag editor (meta/set-tags.js) is final: nothing is added to it here
 const fixedFile = path.join(__dirname, 'tags-fixed.json');
 const fixed = fs.existsSync(fixedFile) ? JSON.parse(fs.readFileSync(fixedFile, 'utf8')) : {};
@@ -24,13 +29,13 @@ for (const c of ['projects', 'gl', 'notable-collaborations', 'more']) for (const
 	if (!m) { report.push({ slug, error: 'no tags line' }); continue; }
 	if (generated.has(slug)) {
 		const before = generated.get(slug).tags;
-		const after = fixed[slug] || withData(union(before, add[slug] || []));
+		const after = withInfogr8(fixed[slug] || withData(union(before, add[slug] || [])), text);
 		out[slug] = after;
 		report.push({ slug, file: c + '/' + f, before, added: after.filter((t) => !before.includes(t)) });
 		continue;
 	}
 	const before = m[1].split(',').map((t) => t.trim()).filter(Boolean);
-	const after = fixed[slug] || withData(union(before, add[slug] || []));
+	const after = withInfogr8(fixed[slug] || withData(union(before, add[slug] || [])), text);
 	if (after.join('|') !== before.join('|')) fs.writeFileSync(file, text.replace(m[0], `tags: [${after.join(', ')}]`));
 	report.push({ slug, file: c + '/' + f, before, added: after.filter((t) => !before.includes(t)) });
 }

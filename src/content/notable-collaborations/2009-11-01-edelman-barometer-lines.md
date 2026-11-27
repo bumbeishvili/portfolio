@@ -2,7 +2,7 @@
 layout: post
 title: "Edelman - Trust Barometer"
 year: 2026
-tags: [d3.js, chart, data visualization, trendline, data analysis, figma]
+tags: [d3.js, chart, data visualization, trendline, data analysis, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Story and data explorer for 25 years of the Edelman Trust Barometer."
 featured_image: "/images/projects/edelman-barometer-lines/thumbnail.mp4"

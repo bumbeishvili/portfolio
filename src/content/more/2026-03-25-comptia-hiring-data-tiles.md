@@ -1,7 +1,7 @@
 ---
 title: "CompTIA - Hiring data tiles"
 year: 2026
-tags: [d3.js, chart, dashboard, workforce, data visualization, figma]
+tags: [d3.js, chart, dashboard, workforce, data visualization, figma, infogr8]
 subtitle: "d3.js, Chart.js"
 description: "Hiring data tiles for CompTIA's career pages, built with d3.js in partnership with Infogr8."
 featured_image: '/images/projects/comptia-hiring-data-tiles/thumbnail.mp4'

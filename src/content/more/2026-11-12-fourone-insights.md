@@ -1,7 +1,7 @@
 ---
 title: "FourOne Insights - Tech Talent Optimizer"
 year: 2026
-tags: [d3.js, svelte, node.js, sankey, dashboard, web app, typescript, tailwind, full-stack, workforce, data visualization, cms, auth, figma]
+tags: [d3.js, svelte, node.js, sankey, dashboard, web app, typescript, tailwind, full-stack, workforce, data visualization, cms, auth, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Tool for planning a tech role and the hiring decision behind it, built with SvelteKit and d3.js."
 featured_image: '/images/projects/fourone-insights/thumbnail.mp4'

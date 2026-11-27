@@ -1,7 +1,7 @@
 ---
 title: "CPI - Public Development Bank Climate Action Portal"
 year: 2025
-tags: [d3.js, svelte, globe, dashboard, tree, tailwind, website, finance, climate, data visualization, figma]
+tags: [d3.js, svelte, globe, dashboard, tree, tailwind, website, finance, climate, data visualization, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Portal for Climate Policy Initiative on how public development banks act on climate, built with SvelteKit and d3.js."
 featured_image: '/images/projects/public-development-bank-climate-portal/thumbnail.mp4'

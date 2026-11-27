@@ -1,7 +1,7 @@
 ---
 title: "DataCards"
 year: 2026
-tags: [svelte, node.js, web app, chart, typescript, tailwind, ai, api integration, full-stack, data visualization, figma]
+tags: [svelte, node.js, web app, chart, typescript, tailwind, ai, api integration, full-stack, data visualization, figma, infogr8]
 subtitle: "SvelteKit, TypeScript"
 description: "DataCards turns a spreadsheet into a table and a set of social cards. A Friday experiment at Infogr8."
 featured_image: '/images/projects/datacards/thumbnail.mp4'

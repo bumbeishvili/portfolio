@@ -2,7 +2,7 @@
 layout: post
 title: "Harvard - Public Servant Project"
 year: 2026
-tags: [d3.js, map, svelte, typescript, tailwind, node.js, chart, cms, accessibility, full-stack, website, workforce, data visualization, cloudflare, gsap, python, web app, data, data analysis, data wrangling, figma]
+tags: [d3.js, map, svelte, typescript, tailwind, node.js, chart, cms, accessibility, full-stack, website, workforce, data visualization, cloudflare, gsap, python, web app, data, data analysis, data wrangling, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "A national hub for data and evidence about the people of government."
 featured_image: "/images/projects/public-servant/thumbnail.mp4"

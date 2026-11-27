@@ -1,7 +1,7 @@
 ---
 title: " Premier League Emissions"
 year: 2023
-tags: [d3.js, svelte, map, storytelling, climate, website, data visualization, scrollytelling, figma]
+tags: [d3.js, svelte, map, storytelling, climate, website, data visualization, scrollytelling, figma, infogr8]
 subtitle: "d3.js, svelte"
 description: "Scroll-driven story (preseasonunfriendly.com) comparing emissions of football friendly matches with a full Premier League season. Made with d3.js and Svelte."
 featured_image: "/images/projects/ple-emissions/ple_thumbnail.mp4"

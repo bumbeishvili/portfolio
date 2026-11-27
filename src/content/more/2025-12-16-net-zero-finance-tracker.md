@@ -1,7 +1,7 @@
 ---
 title: "CPI - Net Zero Finance Tracker"
 year: 2025
-tags: [d3.js, svelte, dashboard, chart, sankey, tailwind, gsap, website, finance, climate, data visualization, figma]
+tags: [d3.js, svelte, dashboard, chart, sankey, tailwind, gsap, website, finance, climate, data visualization, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Net Zero Finance Tracker for Climate Policy Initiative, which follows the climate commitments of financial institutions, built with SvelteKit and d3.js."
 featured_image: '/images/projects/net-zero-finance-tracker/thumbnail.mp4'

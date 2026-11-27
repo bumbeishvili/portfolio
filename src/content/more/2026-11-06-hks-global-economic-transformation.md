@@ -1,7 +1,7 @@
 ---
 title: "HKS - Global Economic Transformation"
 year: 2026
-tags: [svelte, node.js, web app, typescript, tailwind, cms, accessibility, full-stack, website, wysiwyg, auth, figma]
+tags: [svelte, node.js, web app, typescript, tailwind, cms, accessibility, full-stack, website, wysiwyg, auth, figma, infogr8]
 subtitle: "SvelteKit, Tailwind CSS"
 description: "Site of case studies on economic transformation for Harvard Kennedy School, built with SvelteKit."
 featured_image: '/images/projects/hks-global-economic-transformation/thumbnail.mp4'

@@ -70,7 +70,7 @@ const yaml = (value) => JSON.stringify(value);
 	let clips = 0;
 	for (const e of entries) {
 		const dir = path.join(site, 'static/images/projects', e.slug);
-		if (fs.existsSync(dir) && fs.readdirSync(dir).some((f) => !/^((thumbnail|poster|film|walk|\d+)\.webp|(thumbnail|video|film|walk)\.mp4|thumbnail\.small\.mp4)$/.test(f))) throw new Error('image folder already used: ' + dir);
+		if (fs.existsSync(dir) && fs.readdirSync(dir).some((f) => !/^((thumbnail|poster|film|walk|\d+)\.webp|(thumbnail|video|film|walk)\.mp4|thumbnail\.small\.mp4|thumbnail\.card\.webp)$/.test(f))) throw new Error('image folder already used: ' + dir); // the last two are made by posters.js
 		fs.mkdirSync(dir, { recursive: true });
 		for (const f of fs.readdirSync(dir)) fs.unlinkSync(path.join(dir, f));
 

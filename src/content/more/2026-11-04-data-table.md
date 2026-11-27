@@ -1,7 +1,7 @@
 ---
 title: "Data Table"
 year: 2026
-tags: [d3.js, svelte, web app, chart, typescript, tailwind, data visualization, analytics, data wrangling, data table, performance]
+tags: [d3.js, svelte, web app, chart, typescript, tailwind, data visualization, analytics, data wrangling, data table, performance, infogr8]
 subtitle: "SvelteKit, d3.js, TypeScript"
 description: "Data Table shows an uploaded spreadsheet as a table with a small chart above each column. A Friday experiment at Infogr8."
 featured_image: '/images/projects/data-table/thumbnail.mp4'

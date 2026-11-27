@@ -2,7 +2,7 @@
 layout: post
 title: "CompTIA - CyberSeek"
 year: 2026
-tags: [d3.js, dashboard, chart, map, website, workforce, data visualization, treemap, web app, cloudflare, figma]
+tags: [d3.js, dashboard, chart, map, website, workforce, data visualization, treemap, web app, cloudflare, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Cybersecurity workforce platform with a workforce map and career pathways."
 featured_image: "/images/projects/comptia-cyberseek/thumbnail.mp4"

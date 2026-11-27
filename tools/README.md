@@ -26,6 +26,9 @@ node meta/set-tags.js --write    # changes the pages
 
 A list set this way is final. `meta/apply-tags.js` no longer adds anything to those projects.
 
+A project made with infogr8 (its page says "in partnership with infogr8" or "Friday experiment at
+infogr8") gets the `infogr8` tag by itself, from `meta/apply-tags.js`.
+
 `meta/tag-aliases.json` holds spellings that are always replaced, whoever types them: `d3` becomes
 `d3.js`, `r3f` becomes `react three fiber`. Add a line there to rename a tag everywhere.
 

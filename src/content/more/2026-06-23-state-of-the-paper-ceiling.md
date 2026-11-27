@@ -1,7 +1,7 @@
 ---
 title: "Opportunity@Work - State of the Paper Ceiling 2026"
 year: 2026
-tags: [svelte, storytelling, tailwind, animation, workforce, data visualization, scrollytelling, svg, embed, figma]
+tags: [svelte, storytelling, tailwind, animation, workforce, data visualization, scrollytelling, svg, embed, figma, infogr8]
 subtitle: "SvelteKit, Lottie, Tailwind CSS"
 description: "Scrolling report for Opportunity@Work that tells the labor market as a drive along a highway, built with SvelteKit."
 featured_image: '/images/projects/state-of-the-paper-ceiling/thumbnail.mp4'

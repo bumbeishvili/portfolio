@@ -2,7 +2,7 @@
 layout: post
 title: "Bupa - Driving Claims"
 year: 2026
-tags: [d3.js, dashboard, storytelling, healthcare, data visualization, globe, webgl, figma]
+tags: [d3.js, dashboard, storytelling, healthcare, data visualization, globe, webgl, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Claims dashboard and storytelling pages developed for Bupa, with d3.js charts and custom chart components."
 featured_image: "/images/projects/bupa-driving-claims/thumbnail.mp4"

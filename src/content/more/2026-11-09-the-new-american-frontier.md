@@ -1,7 +1,7 @@
 ---
 title: "The New American Frontier"
 year: 2026
-tags: [d3.js, svelte, map, storytelling, tailwind, python, website, workforce, accessibility, data visualization, scrollytelling, data analysis, analytics, figma]
+tags: [d3.js, svelte, map, storytelling, tailwind, python, website, workforce, accessibility, data visualization, scrollytelling, data analysis, analytics, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Site for the book The New American Frontier, about job training for new technologies, built with SvelteKit and d3.js."
 featured_image: '/images/projects/the-new-american-frontier/thumbnail.mp4'

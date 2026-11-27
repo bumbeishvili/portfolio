@@ -50,7 +50,8 @@
   "data",
   "data analysis",
   "data wrangling",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "harvard-economy": [
   "d3.js",
@@ -69,7 +70,8 @@
   "data analysis",
   "data wrangling",
   "aws",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "harvard-workforce": [
   "d3.js",
@@ -96,7 +98,8 @@
   "circle packing",
   "hierarchy",
   "aws",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "bupa-driving-claims": [
   "d3.js",
@@ -106,7 +109,8 @@
   "data visualization",
   "globe",
   "webgl",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "comptia-careers": [
   "d3.js",
@@ -123,7 +127,8 @@
   "node.js",
   "data wrangling",
   "aws",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "comptia-cyberseek": [
   "d3.js",
@@ -136,7 +141,8 @@
   "treemap",
   "web app",
   "cloudflare",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "edelman-barometer-lines": [
   "d3.js",
@@ -144,7 +150,8 @@
   "data visualization",
   "trendline",
   "data analysis",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "mastercard-foundation": [
   "d3.js",
@@ -156,7 +163,8 @@
   "analytics",
   "azure",
   "auth",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "strategies-simulator": [
   "d3.js",
@@ -220,7 +228,8 @@
   "data visualization",
   "cms",
   "auth",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "the-new-american-frontier": [
   "d3.js",
@@ -236,7 +245,8 @@
   "scrollytelling",
   "data analysis",
   "analytics",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "hks-global-economic-transformation": [
   "svelte",
@@ -250,7 +260,8 @@
   "website",
   "wysiwyg",
   "auth",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "yff-data-dashboard": [
   "d3.js",
@@ -274,7 +285,8 @@
   "hex map",
   "performance",
   "azure",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "data-table": [
   "d3.js",
@@ -287,7 +299,8 @@
   "analytics",
   "data wrangling",
   "data table",
-  "performance"
+  "performance",
+  "infogr8"
  ],
  "hdr-merger": [
   "web app",
@@ -308,7 +321,8 @@
   "data visualization",
   "ai",
   "trendline",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "green-diamond": [
   "game",
@@ -384,7 +398,8 @@
   "scrollytelling",
   "svg",
   "embed",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "datacards": [
   "svelte",
@@ -397,7 +412,8 @@
   "api integration",
   "full-stack",
   "data visualization",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "eui-open-internet": [
   "storytelling",
@@ -407,7 +423,8 @@
   "data visualization",
   "scrollytelling",
   "map",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "gla-london-energy-charts": [
   "d3.js",
@@ -416,7 +433,8 @@
   "data visualization",
   "radar",
   "rose",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "invoicelet": [
   "web app",
@@ -429,7 +447,8 @@
   "dashboard",
   "workforce",
   "data visualization",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "realtime-html-editor": [
   "web app",
@@ -473,7 +492,8 @@
   "finance",
   "climate",
   "data visualization",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "net-zero-finance-tracker": [
   "d3.js",
@@ -487,7 +507,8 @@
   "finance",
   "climate",
   "data visualization",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "raging-sea-shading": [
   "three.js",
@@ -575,7 +596,8 @@
   "website",
   "data visualization",
   "scrollytelling",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "clim-globe": [
   "three.js",
@@ -596,7 +618,8 @@
   "workforce",
   "data visualization",
   "accessibility",
-  "webby"
+  "webby",
+  "infogr8"
  ],
  "sequoia-org-chart": [
   "d3.js",
@@ -630,7 +653,8 @@
   "chart",
   "storytelling",
   "data visualization",
-  "figma"
+  "figma",
+  "infogr8"
  ],
  "andromeda-globe": [
   "three.js",
@@ -679,7 +703,8 @@
   "d3.js",
   "chart",
   "healthcare",
-  "data visualization"
+  "data visualization",
+  "infogr8"
  ],
  "minecraft-biome-map": [
   "d3.js",

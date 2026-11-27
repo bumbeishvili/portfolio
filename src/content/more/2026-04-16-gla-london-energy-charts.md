@@ -1,7 +1,7 @@
 ---
 title: "GLA - London energy charts"
 year: 2026
-tags: [d3.js, chart, climate, data visualization, radar, rose, figma]
+tags: [d3.js, chart, climate, data visualization, radar, rose, figma, infogr8]
 subtitle: "d3.js"
 description: "Embeddable d3.js charts on London's energy plans for the Greater London Authority."
 featured_image: '/images/projects/gla-london-energy-charts/thumbnail.mp4'

@@ -1,7 +1,7 @@
 ---
 title: "EUI - 10 reasons for an open Internet"
 year: 2026
-tags: [storytelling, d3.js, gsap, animation, data visualization, scrollytelling, map, figma]
+tags: [storytelling, d3.js, gsap, animation, data visualization, scrollytelling, map, figma, infogr8]
 subtitle: "JavaScript, SVG"
 description: "Illustrated scrolling page on why an open Internet is good for growth."
 featured_image: '/images/projects/eui-open-internet/thumbnail.mp4'

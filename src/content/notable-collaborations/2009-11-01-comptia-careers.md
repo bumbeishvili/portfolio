@@ -2,7 +2,7 @@
 layout: post
 title: "CompTIA - Careers+"
 year: 2026
-tags: [d3.js, map, dashboard, svelte, website, workforce, data visualization, canvas, performance, cms, web app, node.js, data wrangling, aws, figma]
+tags: [d3.js, map, dashboard, svelte, website, workforce, data visualization, canvas, performance, cms, web app, node.js, data wrangling, aws, figma, infogr8]
 subtitle: "d3.js, frontend engineering"
 description: "Career exploration platform that matches skills and interests to tech-career pathways."
 featured_image: "/images/projects/comptia-job-exploration/thumbnail.mp4"

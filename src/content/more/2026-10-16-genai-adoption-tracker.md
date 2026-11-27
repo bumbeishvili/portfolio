@@ -1,7 +1,7 @@
 ---
 title: "Harvard - GenAI Adoption Tracker"
 year: 2026
-tags: [d3.js, svelte, chart, storytelling, tailwind, website, workforce, accessibility, data visualization, ai, trendline, figma]
+tags: [d3.js, svelte, chart, storytelling, tailwind, website, workforce, accessibility, data visualization, ai, trendline, figma, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "GenAI Adoption Tracker with charts of how US adults use generative AI at work and at home, built with SvelteKit and d3.js."
 featured_image: '/images/projects/genai-adoption-tracker/thumbnail.mp4'

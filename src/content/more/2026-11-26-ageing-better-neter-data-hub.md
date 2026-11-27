@@ -1,7 +1,7 @@
 ---
 title: "Centre for Ageing Better - NETER data hub"
 year: 2026
-tags: [d3.js, svelte, dashboard, chart, map, tailwind, accessibility, website, workforce, figma, data visualization]
+tags: [d3.js, svelte, dashboard, chart, map, tailwind, accessibility, website, workforce, figma, data visualization, infogr8]
 subtitle: "SvelteKit, d3.js, Tailwind CSS"
 description: "Data hub for the Centre for Ageing Better on people aged 50 to state pension age who are neither working nor retired, built with SvelteKit and d3.js."
 featured_image: '/images/projects/ageing-better-neter-data-hub/thumbnail.mp4'
